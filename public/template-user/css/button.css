@@ -1,0 +1,117 @@
+.ku-button {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 26px
+}
+
+.ku-button__label {
+    text-align: center
+}
+
+.ku-button--primary {
+    border: none;
+    background-color: #2980b9;
+    color: #fff
+}
+
+.ku-button--primary:hover {
+    background-color: #2980b9
+}
+
+.ku-button--primary:active {
+    background-color: #2980b9;
+    margin: 1px;
+    padding: 8px 15px
+}
+
+.ku-button--primary:focus {
+    box-shadow: inset 0 0 0 1px #2980b9, inset 0 0 0 2px #ffc800
+}
+
+.ku-button--secondary {
+    border: 1px solid #2980b9;
+    background-color: transparent;
+    color: #2980b9
+}
+
+.ku-button--secondary:hover {
+    background-color:  #a3daff
+}
+
+.ku-button--secondary:active {
+    margin: 1px;
+    padding: 8px 15px
+}
+
+.ku-button--secondary:focus {
+    background-color:  #a3daff;
+    box-shadow: inset 0 0 0 1px  #a3daff, inset 0 0 0 2px #ffc800
+}
+
+.ku-button--tertiary {
+    border: none;
+    background-color: transparent;
+    color: #2980b9
+}
+
+.ku-button--tertiary:hover {
+    background-color:  #a3daff
+}
+
+.ku-button--tertiary:active {
+    background-color: #c3e9d0;
+    margin: 1px;
+    padding: 8px 15px
+}
+
+.ku-button--tertiary:focus {
+    box-shadow: inset 0 0 0 1px  #a3daff, inset 0 0 0 2px #ffc800
+}
+
+.ku-button--tertiary-paddingless {
+    border: none;
+    padding: 3px 4px;
+    background-color: transparent;
+    color: #2980b9
+}
+
+.ku-button--tertiary-paddingless:hover {
+    background-color:  #a3daff
+}
+
+.ku-button--tertiary-paddingless:active {
+    background-color: #c3e9d0;
+    margin: 1px;
+    padding: 2px 3px
+}
+
+.ku-button--tertiary-paddingless:focus {
+    box-shadow: inset 0 0 0 1px  #a3daff, inset 0 0 0 2px #ffc800
+}
+
+.ku-button--danger {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+    background-color: #d32f2f;
+    color: #fff
+}
+
+.ku-button--danger:hover {
+    background-color: #b71b1c
+}
+
+.ku-button--danger:active {
+    background-color: #b71b1c;
+    margin: 1px;
+    padding: 8px 15px
+}
+
+.ku-button--danger:focus {
+    box-shadow: inset 0 0 0 1px #d32f2f, inset 0 0 0 2px #ffc800
+}
