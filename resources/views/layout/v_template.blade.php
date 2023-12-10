@@ -34,7 +34,6 @@
     @include('layout/v_footer')
     <!-- /.footer -->
 
-    <script src="{{ asset('template-user/js/main.js') }}"></script>
     <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/main.js"></script>
@@ -43,7 +42,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
+    <script src="{{ asset('template-user/js/main.js') }}"></script>
 
 </body>
 </html>

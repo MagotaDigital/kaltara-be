@@ -14,8 +14,10 @@ class BeritaController extends Controller
         $this->beritaModel = $beritaModel;
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        $kategori = $request->input("kategori");
+
         $data = [
             // nav data
             'dashboard_publik' => $this->beritaModel->getDashboardPublik(),
@@ -24,7 +26,7 @@ class BeritaController extends Controller
             'ppid' => $this->beritaModel->getPPID(),
             // main data
             'berita_terkini' => $this->beritaModel->getBeritaTerkini(),
-            'berita' => $this->beritaModel->getBerita(),
+            'berita' => $this->beritaModel->getBerita($kategori),
         ];
 
         return view('v_berita', $data);
@@ -43,6 +45,6 @@ class BeritaController extends Controller
             'berita' => $this->beritaModel->getDetailBerita($slug),
         ];
 
-        return view('v_detail_berita', $data);
+        return view('v_detailberita', $data);
     }
 }
