@@ -464,6 +464,15 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-4 text-white">
+                                <a href="document.html" class="d-flex align-items-start">
+                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
+                                    <div class="ms-3 text-white">
+                                        <h2 class="fs-5 mb-1">Kalender Event</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis velit, quia ipsa tempore magnam eligendi repellendus aliquid laboriosam soluta saepe dignissimos ratione minus! Quibusdam, error sint. Ut, consectetur impedit.</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
@@ -569,15 +578,6 @@
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Daftar Informasi Dikecualikan</h2>
                                         <p>Daftar informasi yang tidak dapat diakses oleh Pemohon Informasi Publik sebagaimana dimaksud dalam UU No 14 Tahun 2008 tentang Keterbukaan Informasi Publik</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kalender Event</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis velit, quia ipsa tempore magnam eligendi repellendus aliquid laboriosam soluta saepe dignissimos ratione minus! Quibusdam, error sint. Ut, consectetur impedit.</p>
                                     </div>
                                 </a>
                             </div>
