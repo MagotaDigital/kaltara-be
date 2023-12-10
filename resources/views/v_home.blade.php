@@ -17,10 +17,10 @@
                     Menjawab Kebutuhan Informasi
                 </h1>
                 <h2 class="text-white text-center fw-bold font-intro">
-                    Publik Warga Jawa Barat
+                    Publik Warga Kalimantan Utara
                 </h2>
                 <p class="text-white fw-medium text-center mb-4">
-                    Temukan informasi publik terkini dari Pemerintah Daerah Provinsi Jawa Barat
+                    Temukan informasi publik terkini dari Pemerintah Daerah Provinsi Kalimantan Utara
                 </p>
                 <div class="section-hero w-100">
                     <div class="position-relative mb-4">
@@ -57,7 +57,7 @@
                     </div>
                     <section>
                         <p class="font-lato fw-bold text-white text-center mb-4">
-                            Pencarian populer di Jawa Barat
+                            Pencarian populer di Kalimantan Utara
                         </p>
                         <div class="section-hero">
                             <div
@@ -390,20 +390,19 @@
                                         <ul id="latest-news-panel" class="h-100 d-flex flex-column gap-2 list-unstyled">
                                             @foreach($berita as $item)
                                             <li class="list-card duration-250 p-3 rounded list-type">
-                                                <a href=" {{$item->slug}}"
-                                                    class="">
+                                                <a href=" {{$item->slug}}" class="">
                                                     <div class="d-flex flex-column gap-3 w-100">
                                                         <p class="text-truncate-3 fw-medium" style="font-size: 14px;">
                                                             {{$item->judul}}
                                                         </p>
                                                         <div class="d-flex justify-content-between align-items-center">
                                                             <p style="font-size: 12px;">
-                                                                 {{$item->kategori}}
+                                                                {{$item->kategori}}
                                                                 <span aria-hidden="true" class="ms-1">
                                                                     |
                                                                 </span> <span class="sr-only">Dipublikasikan
                                                                     tanggal</span> <span class="ms-1">
-                                                                        {{$item->tanggal_rilis}}           
+                                                                    {{$item->tanggal_rilis}}
                                                                 </span>
                                                             </p>
                                                             <div class="d-flex justify-content-center align-items-center"
@@ -424,7 +423,7 @@
                                                 </a>
                                             </li>
                                             @endforeach
-                                            
+
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -882,7 +881,7 @@
                     Transparansi Keuangan Daerah
                 </h1>
                 <div class="d-flex justify-content-center flex-column text-center" style="flex: 1 1 0%;">
-                    <p>Menyajikan Publikasi Kinerja Keuangan Daerah Provinsi Jawa Barat</p>
+                    <p>Menyajikan Publikasi Kinerja Keuangan Daerah Provinsi Kalimantan Utara</p>
                 </div>
                 <a href="/berita" tabindex="-1" class="">
                     <button class="d-flex justify-content-between btn-sm font-sans btn btn-fill">
@@ -916,58 +915,59 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="bg-white gap-2 p-3 rounded border border-info" style="min-width: 282px;">
-                        <div class="border rounded" style="height: 120px;">
-                            <figure class="mx-auto p-3" style="width: 80px; height: 80px;">
-                                <img src="images/icons/pdf.svg" alt="Realisasi Pendapatan Daerah Tahun 2022" width="80"
-                                    height="80" class="w-100 h-100" style="object-fit: contain;">
-                            </figure>
-                        </div>
-                        <a href="#" class="gap-3 mt-3">
-                            <p class="text-dark mb-3 mt-3">
-                                Transparansi Pengelolaan Keuangan Daerah
-                            </p>
-                            <h5 class="fw-bold mb-3 text-truncate">
-                                Realisasi Pendapatan Daerah Tahun 2022
-                            </h5>
-                            <p class="text-dark text-truncate-3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quo totam velit
-                                repellat animi eos labore praesentium adipisci, ea, dicta, exercitationem vel sequi
-                                quibusdam atque omnis voluptatem eveniet ullam aliquam.
+                        <a href="">
+                            <div class="border rounded" style="height: 120px;">
+                                <figure class="mx-auto p-3" style="width: 80px; height: 80px;">
+                                    <img src="images/icons/pdf.svg" alt="Realisasi Pendapatan Daerah Tahun 2022"
+                                        width="80" height="80" class="w-100 h-100" style="object-fit: contain;">
+                                </figure>
+                            </div>
+                            <div class="gap-3 mt-3">
+                                <p class="text-dark mb-3 mt-3">
+                                    Transparansi Pengelolaan Keuangan Daerah
+                                </p>
+                                <h5 class="fw-bold mb-3 text-blue text-truncate">
+                                    Realisasi Pendapatan Daerah Tahun 2022
+                                </h5>
+                                <p class="text-dark text-truncate-3">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quo totam velit
+                                    repellat animi eos labore praesentium adipisci, ea, dicta, exercitationem vel sequi
+                                    quibusdam atque omnis voluptatem eveniet ullam aliquam.
 
-                            </p>
+                                </p>
+                            </div>
+                            <div class="mx-auto row mt-2">
+                                <div class="col-6">
+                                    <a href="#"
+                                        class="btn btn-fill text-white btn-sm d-flex align-items-center p-2 justify-content-center">Lihat
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" class="jds-icon__svg"
+                                            style="width: 18px; height: 18px; transform: rotate(0deg); fill: currentcolor;">
+                                            <path
+                                                d="M10.0008 12.3999C11.3263 12.3999 12.4008 11.3254 12.4008 9.99996C12.4008 8.67448 11.3263 7.59998 10.0008 7.59998C8.67532 7.59998 7.60081 8.67448 7.60081 9.99996C7.60081 11.3254 8.67532 12.3999 10.0008 12.3999Z">
+                                            </path>
+                                            <path
+                                                d="M18.8071 9.34746C17.8149 7.81297 16.5275 6.50948 15.0845 5.57761C13.4882 4.54562 11.7257 4 9.98793 4C8.39345 4 6.82558 4.45562 5.32784 5.35412C3.80048 6.27023 2.41674 7.6086 1.21487 9.33171C1.07919 9.52645 1.00447 9.75713 1.00019 9.99443C0.995921 10.2317 1.06229 10.465 1.19087 10.6645C2.18124 12.2143 3.45586 13.5197 4.87635 14.4388C6.47571 15.4749 8.19695 15.9999 9.98793 15.9999C11.7395 15.9999 13.5058 15.4588 15.0954 14.4354C16.5376 13.5066 17.8224 12.1982 18.8109 10.651C18.935 10.4561 19.0007 10.2297 19 9.99866C18.9993 9.76761 18.9324 9.54161 18.8071 9.34746V9.34746ZM10.0007 13.5999C9.28868 13.5999 8.59266 13.3888 8.00065 12.9932C7.40863 12.5977 6.94722 12.0354 6.67474 11.3776C6.40227 10.7198 6.33098 9.99596 6.46988 9.29764C6.60879 8.59931 6.95165 7.95786 7.45512 7.45439C7.95858 6.95093 8.60004 6.60806 9.29836 6.46916C9.99669 6.33025 10.7205 6.40154 11.3783 6.67402C12.0361 6.94649 12.5984 7.40791 12.994 7.99992C13.3895 8.59193 13.6007 9.28795 13.6007 9.99996C13.5996 10.9544 13.2199 11.8694 12.545 12.5443C11.8702 13.2192 10.9551 13.5988 10.0007 13.5999V13.5999Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#"
+                                        class="btn btn-fill text-white btn-sm d-flex align-items-center p-2 justify-content-center">Unduh
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" class="jds-icon__svg"
+                                            style="width: 18px; height: 18px; transform: rotate(0deg); fill: currentcolor;">
+                                            <path
+                                                d="M9.1009 2.80028C8.6204 2.80024 8.14475 2.8964 7.70199 3.08308C7.25923 3.26977 6.85833 3.5432 6.52291 3.88726C6.18748 4.23132 5.92433 4.63905 5.74897 5.08641C5.5736 5.53377 5.48957 6.01171 5.50182 6.49206C5.50664 6.69523 5.44255 6.89404 5.31999 7.05615C5.19743 7.21825 5.02361 7.33411 4.82683 7.38485C4.19236 7.55105 3.64001 7.94237 3.2728 8.48581C2.9056 9.02925 2.74861 9.68772 2.83113 10.3384C2.91365 10.989 3.23003 11.5875 3.72127 12.022C4.21251 12.4566 4.84505 12.6977 5.50092 12.7002H6.40092C6.63961 12.7002 6.86853 12.795 7.03731 12.9638C7.20609 13.1326 7.30091 13.3615 7.30091 13.6002C7.30091 13.8389 7.20609 14.0678 7.03731 14.2366C6.86853 14.4054 6.63961 14.5002 6.40092 14.5002H5.50092C4.4644 14.5004 3.45959 14.1428 2.65627 13.4878C1.85295 12.8328 1.30038 11.9205 1.09194 10.9052C0.883494 9.88984 1.03196 8.83367 1.51224 7.91514C1.99252 6.9966 2.77516 6.27203 3.72793 5.86386C3.84143 4.72633 4.313 3.65417 5.07475 2.80176C5.83649 1.94935 6.84911 1.36068 7.96677 1.12051C9.08444 0.880349 10.2495 1.00108 11.2942 1.46533C12.3388 1.92957 13.2092 2.71338 13.78 3.70388C15.1927 3.75529 16.5289 4.35864 17.5017 5.38436C18.4745 6.41008 19.0063 7.77638 18.9828 9.18984C18.9594 10.6033 18.3826 11.9512 17.3763 12.9441C16.37 13.937 15.0145 14.4957 13.6009 14.5002C13.3622 14.5002 13.1333 14.4054 12.9645 14.2366C12.7957 14.0678 12.7009 13.8389 12.7009 13.6002C12.7009 13.3615 12.7957 13.1326 12.9645 12.9638C13.1333 12.795 13.3622 12.7002 13.6009 12.7002C14.0856 12.6995 14.5652 12.6009 15.011 12.4103C15.4567 12.2198 15.8593 11.9411 16.1947 11.5912C16.5301 11.2412 16.7914 10.8271 16.9629 10.3737C17.1343 9.92025 17.2125 9.43688 17.1926 8.95253C17.1727 8.46819 17.0552 7.99286 16.8471 7.55503C16.6391 7.11721 16.3447 6.72591 15.9817 6.40462C15.6188 6.08332 15.1946 5.83864 14.7348 5.68525C14.2749 5.53186 13.7889 5.47292 13.3057 5.51197C13.1182 5.52721 12.9306 5.48332 12.7693 5.38647C12.6081 5.28961 12.4812 5.14465 12.4066 4.97197C12.1276 4.32688 11.666 3.77752 11.0786 3.39163C10.4912 3.00573 9.80372 2.80017 9.1009 2.80028V2.80028ZM10.0009 8.20025C10.2396 8.20025 10.4685 8.29507 10.6373 8.46385C10.8061 8.63264 10.9009 8.86155 10.9009 9.10025V15.9276L11.1646 15.6639C11.3343 15.5 11.5617 15.4093 11.7977 15.4113C12.0336 15.4134 12.2594 15.508 12.4262 15.6749C12.5931 15.8417 12.6877 16.0675 12.6898 16.3034C12.6918 16.5394 12.6011 16.7668 12.4372 16.9365L10.6372 18.7365C10.4684 18.9052 10.2395 19 10.0009 19C9.76225 19 9.53338 18.9052 9.3646 18.7365L7.56461 16.9365C7.47865 16.8535 7.41009 16.7542 7.36292 16.6444C7.31575 16.5346 7.29093 16.4165 7.28989 16.297C7.28885 16.1775 7.31162 16.059 7.35687 15.9484C7.40213 15.8377 7.46895 15.7373 7.55346 15.6528C7.63796 15.5683 7.73845 15.5014 7.84905 15.4562C7.95966 15.4109 8.07817 15.3881 8.19767 15.3892C8.31717 15.3902 8.43527 15.4151 8.54507 15.4622C8.65487 15.5094 8.75418 15.578 8.83721 15.6639L9.1009 15.9276V9.10025C9.1009 8.86155 9.19572 8.63264 9.36451 8.46385C9.53329 8.29507 9.76221 8.20025 10.0009 8.20025V8.20025Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+
+                            </div>
                         </a>
-                        <div class="mx-auto row mt-2">
-                            <div class="col-6">
-                                <a href="#"
-                                    class="btn btn-fill text-white btn-sm d-flex align-items-center p-2 justify-content-center">Lihat
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg" class="jds-icon__svg"
-                                        style="width: 18px; height: 18px; transform: rotate(0deg); fill: currentcolor;">
-                                        <path
-                                            d="M10.0008 12.3999C11.3263 12.3999 12.4008 11.3254 12.4008 9.99996C12.4008 8.67448 11.3263 7.59998 10.0008 7.59998C8.67532 7.59998 7.60081 8.67448 7.60081 9.99996C7.60081 11.3254 8.67532 12.3999 10.0008 12.3999Z">
-                                        </path>
-                                        <path
-                                            d="M18.8071 9.34746C17.8149 7.81297 16.5275 6.50948 15.0845 5.57761C13.4882 4.54562 11.7257 4 9.98793 4C8.39345 4 6.82558 4.45562 5.32784 5.35412C3.80048 6.27023 2.41674 7.6086 1.21487 9.33171C1.07919 9.52645 1.00447 9.75713 1.00019 9.99443C0.995921 10.2317 1.06229 10.465 1.19087 10.6645C2.18124 12.2143 3.45586 13.5197 4.87635 14.4388C6.47571 15.4749 8.19695 15.9999 9.98793 15.9999C11.7395 15.9999 13.5058 15.4588 15.0954 14.4354C16.5376 13.5066 17.8224 12.1982 18.8109 10.651C18.935 10.4561 19.0007 10.2297 19 9.99866C18.9993 9.76761 18.9324 9.54161 18.8071 9.34746V9.34746ZM10.0007 13.5999C9.28868 13.5999 8.59266 13.3888 8.00065 12.9932C7.40863 12.5977 6.94722 12.0354 6.67474 11.3776C6.40227 10.7198 6.33098 9.99596 6.46988 9.29764C6.60879 8.59931 6.95165 7.95786 7.45512 7.45439C7.95858 6.95093 8.60004 6.60806 9.29836 6.46916C9.99669 6.33025 10.7205 6.40154 11.3783 6.67402C12.0361 6.94649 12.5984 7.40791 12.994 7.99992C13.3895 8.59193 13.6007 9.28795 13.6007 9.99996C13.5996 10.9544 13.2199 11.8694 12.545 12.5443C11.8702 13.2192 10.9551 13.5988 10.0007 13.5999V13.5999Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#"
-                                    class="btn btn-fill text-white btn-sm d-flex align-items-center p-2 justify-content-center">Unduh
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg" class="jds-icon__svg"
-                                        style="width: 18px; height: 18px; transform: rotate(0deg); fill: currentcolor;">
-                                        <path
-                                            d="M9.1009 2.80028C8.6204 2.80024 8.14475 2.8964 7.70199 3.08308C7.25923 3.26977 6.85833 3.5432 6.52291 3.88726C6.18748 4.23132 5.92433 4.63905 5.74897 5.08641C5.5736 5.53377 5.48957 6.01171 5.50182 6.49206C5.50664 6.69523 5.44255 6.89404 5.31999 7.05615C5.19743 7.21825 5.02361 7.33411 4.82683 7.38485C4.19236 7.55105 3.64001 7.94237 3.2728 8.48581C2.9056 9.02925 2.74861 9.68772 2.83113 10.3384C2.91365 10.989 3.23003 11.5875 3.72127 12.022C4.21251 12.4566 4.84505 12.6977 5.50092 12.7002H6.40092C6.63961 12.7002 6.86853 12.795 7.03731 12.9638C7.20609 13.1326 7.30091 13.3615 7.30091 13.6002C7.30091 13.8389 7.20609 14.0678 7.03731 14.2366C6.86853 14.4054 6.63961 14.5002 6.40092 14.5002H5.50092C4.4644 14.5004 3.45959 14.1428 2.65627 13.4878C1.85295 12.8328 1.30038 11.9205 1.09194 10.9052C0.883494 9.88984 1.03196 8.83367 1.51224 7.91514C1.99252 6.9966 2.77516 6.27203 3.72793 5.86386C3.84143 4.72633 4.313 3.65417 5.07475 2.80176C5.83649 1.94935 6.84911 1.36068 7.96677 1.12051C9.08444 0.880349 10.2495 1.00108 11.2942 1.46533C12.3388 1.92957 13.2092 2.71338 13.78 3.70388C15.1927 3.75529 16.5289 4.35864 17.5017 5.38436C18.4745 6.41008 19.0063 7.77638 18.9828 9.18984C18.9594 10.6033 18.3826 11.9512 17.3763 12.9441C16.37 13.937 15.0145 14.4957 13.6009 14.5002C13.3622 14.5002 13.1333 14.4054 12.9645 14.2366C12.7957 14.0678 12.7009 13.8389 12.7009 13.6002C12.7009 13.3615 12.7957 13.1326 12.9645 12.9638C13.1333 12.795 13.3622 12.7002 13.6009 12.7002C14.0856 12.6995 14.5652 12.6009 15.011 12.4103C15.4567 12.2198 15.8593 11.9411 16.1947 11.5912C16.5301 11.2412 16.7914 10.8271 16.9629 10.3737C17.1343 9.92025 17.2125 9.43688 17.1926 8.95253C17.1727 8.46819 17.0552 7.99286 16.8471 7.55503C16.6391 7.11721 16.3447 6.72591 15.9817 6.40462C15.6188 6.08332 15.1946 5.83864 14.7348 5.68525C14.2749 5.53186 13.7889 5.47292 13.3057 5.51197C13.1182 5.52721 12.9306 5.48332 12.7693 5.38647C12.6081 5.28961 12.4812 5.14465 12.4066 4.97197C12.1276 4.32688 11.666 3.77752 11.0786 3.39163C10.4912 3.00573 9.80372 2.80017 9.1009 2.80028V2.80028ZM10.0009 8.20025C10.2396 8.20025 10.4685 8.29507 10.6373 8.46385C10.8061 8.63264 10.9009 8.86155 10.9009 9.10025V15.9276L11.1646 15.6639C11.3343 15.5 11.5617 15.4093 11.7977 15.4113C12.0336 15.4134 12.2594 15.508 12.4262 15.6749C12.5931 15.8417 12.6877 16.0675 12.6898 16.3034C12.6918 16.5394 12.6011 16.7668 12.4372 16.9365L10.6372 18.7365C10.4684 18.9052 10.2395 19 10.0009 19C9.76225 19 9.53338 18.9052 9.3646 18.7365L7.56461 16.9365C7.47865 16.8535 7.41009 16.7542 7.36292 16.6444C7.31575 16.5346 7.29093 16.4165 7.28989 16.297C7.28885 16.1775 7.31162 16.059 7.35687 15.9484C7.40213 15.8377 7.46895 15.7373 7.55346 15.6528C7.63796 15.5683 7.73845 15.5014 7.84905 15.4562C7.95966 15.4109 8.07817 15.3881 8.19767 15.3892C8.31717 15.3902 8.43527 15.4151 8.54507 15.4622C8.65487 15.5094 8.75418 15.578 8.83721 15.6639L9.1009 15.9276V9.10025C9.1009 8.86155 9.19572 8.63264 9.36451 8.46385C9.53329 8.29507 9.76221 8.20025 10.0009 8.20025V8.20025Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-
-
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -976,32 +976,177 @@
 </section>
 <section class="pb-5">
     <div class="container mx-auto">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-
+        <div class="row ga">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div>
+                    <h2 class="text-left fw-medium leading-loose">
+                        Akses Cepat
+                    </h2>
+                    <p class="text-left">
+                        Dapatkan kemudahaan akses ke beberapa layanan Pemerintah Provinsi Kalimantan Utara untuk kebutuhan
+                        Anda.
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
 
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
 
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
 
+                    </div>
+                </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
 
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
 
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
 
+                    </div>
+                </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
 
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
+
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
+
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
+
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
+
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-dark">
+                    <div class="list-card list-type gap-4 p-4 rounded ease-brand duration-250" style="height: 253px;">
+                        <img src="https://jabarprov.go.id/icons/program-unggulan/jabar-saber-hoaks.svg" width="32"
+                            height="32" alt="Jabar Saber Hoaks" class="lazy-img" lazy="loaded">
+
+                        <h3 class="fw-bold text-blue mt-3">
+                            Lorem Ipsum Dolor
+                        </h3>
+
+                        <p class="text-truncate-3 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies porttitor
+                            tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. In eu arcu hendrerit, semper ligula at, volutpat tellus. Aenean egestas
+                            fermentum consequat. Cras quis justo tortor. Duis molestie nisl at erat mollis viverra.
+                        </p>
+
+                    </div>
+                </a>
 
             </div>
         </div>
