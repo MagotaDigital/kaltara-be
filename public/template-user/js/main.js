@@ -216,3 +216,26 @@ var swiper2 = new Swiper(".mySwiperproduct", {
         },
     },
 });
+var swiper = new Swiper(".mySwiperInfografis", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    mousewheel: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+        },
+    },
+});
