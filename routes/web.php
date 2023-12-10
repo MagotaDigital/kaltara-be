@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-
-Route::get('/', [HomeController::class, 'index']);
+// Home
+Route::get('/', [Controllers\HomeController::class, 'index']);
+// Berita
+Route::get('/berita', [Controllers\BeritaController::class, 'index']);
+Route::get('/berita/{slug}', [Controllers\BeritaController::class, 'detailBerita']);
 

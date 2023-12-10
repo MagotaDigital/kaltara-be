@@ -65,9 +65,14 @@ class HomeModel extends Model
     {
         return DB::table('arsip_dokumens as a')
             ->join('topik_publikasis as t', 'a.topik_publikasi_id', '=', 't.id')
-            ->select('a.*', 't.nama')
+            ->select('a.*', 't.nama as topik')
             ->where('t.nama', 'Transparansi Pengelolaan Keuangan Daerah')
             ->get();
+    }
+
+    public function getKategoriLayananPublik()
+    {
+        return DB::table('kategori_layanan_publiks')->get();
     }
 
 
