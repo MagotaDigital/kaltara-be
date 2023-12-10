@@ -1,7 +1,7 @@
 @extends('layout/v_template')
 
 @section('content')
-<section id="hero-top-50"
+    <section id="hero-top-50"
         style="background: url('https://images.unsplash.com/photo-1646432581107-06cd4333cfde?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <div class="hero-cover">
             <div class="container">
@@ -28,19 +28,14 @@
             <aside class="p-3 font-primary col-md-3">
                 <nav class="nav flex-column">
                     <p class="fw-bold">Konten Layanan</p>
-                    <a class="nav-link active" aria-current="page" href="#" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Infografis</a>
+                    <a class="nav-link" href="DetailLayanan.html#info" type="button">Infografis</a>
 
-                    <a class="nav-link" href="#" id="lap-pertanggungjawaban-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-lap-pertanggungjawaban" type="button" role="tab"
-                        aria-controls="pills-deskripsi" aria-selected="false">Deskripsi</a>
+                    <a class="nav-link" href="DetailLayanan.html#desc" type="button">Deskripsi</a>
                 </nav>
             </aside>
-            <div class="tab-content col-md-9 ps-4" id="v-pills-tabContent">
+            <div class="col-md-9 ps-4" id="v-pills-tabContent">
                 <!-- TAB PERTAMA -->
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                <div id='info'>
                     <p class="font-title fs-3 text-blue fw-bold pb-3">Infografis</p>
                     <div class="mt-3">
                         <div class="swiper mySwiperInfografis">
@@ -82,27 +77,25 @@
                 </div>
 
                 <!-- TAB KEDUA -->
-                <div class="tab-pane fade" id="pills-lap-pertanggungjawaban" role="tabpanel"
-                    aria-labelledby="lap-pertanggungjawaban-tab" tabindex="0">
-                    <p class="font-title fs-3 text-blue fw-bold pb-3">Deskripsi</p>
+                <div id="desc">
+                    <p class="font-title fs-3 text-blue fw-bold pb-3 pt-5">Deskripsi</p>
                     <div class="mt-3">
                         <ul class="d-flex justify-items-center gap-4 w-100" style="list-style: none;">
                             <li class="bg-[#F9FAFB] p-4 rounded-xl w-100">
                                 <div class="row w-100 h-100">
                                     <div class="col-1">
-                                        <svg height="10" width="10"
-                                        class="min-w-[10px] mt-[7px]">
-                                        <circle cx="5" cy="5" r="5" fill="#4DC27E"></circle>
-                                    </svg>
+                                        <svg height="10" width="10" class="min-w-[10px] mt-[7px]">
+                                            <circle cx="5" cy="5" r="5" fill="#4DC27E"></circle>
+                                        </svg>
                                     </div>
                                     <div class="col-11">
                                         <p class="w-100 font-lato text-left text-blue-gray-900"><span
-                                            class="font-normal leading-[23px] text-sm ">
-                                            Validasi data kependudukan berdasarkan kriteria permasalahan tertentu
-                                        </span> <span class="font-normal leading-[23px] text-sm"
-                                            style="display:none;"></span></p>
+                                                class="font-normal leading-[23px] text-sm ">
+                                                Validasi data kependudukan berdasarkan kriteria permasalahan tertentu
+                                            </span> <span class="font-normal leading-[23px] text-sm"
+                                                style="display:none;"></span></p>
                                     </div>
-                               
+
                                 </div>
                             </li>
                         </ul>
@@ -111,5 +104,4 @@
             </div>
         </div>
     </section>
-
 @endsection
