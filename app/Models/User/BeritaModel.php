@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class HomeModel extends Model
+class BeritaModel extends Model
 {
     use HasFactory;
 
@@ -30,23 +30,6 @@ class HomeModel extends Model
 
 
     // main data
-    public function getBeritaTerkini()
-    {
-        return DB::table('kategori_beritas')
-            ->join(DB::raw('(SELECT b.*, ROW_NUMBER() OVER (PARTITION BY b.kategori_berita_id ORDER BY b.tanggal_rilis DESC) AS ranking FROM beritas b) AS beritas'), function ($join) {
-                $join->on('kategori_beritas.id', '=', 'beritas.kategori_berita_id');
-            })
-            ->select('kategori_beritas.nama as kategori', 'beritas.*')
-            ->where('beritas.ranking', 1)
-            ->get();
-    }
-    public function getBerita(){
-        return DB::table('beritas as b')
-            ->join('kategori_beritas as k','b.kategori_berita_id','k.id')
-            ->select('b.*','k.nama as kategori')
-            ->get();
-    }
-
     public function getDetailBerita($slug){
         return DB::table('beritas as b')
             ->join('kategori_beritas as k','b.kategori_berita_id','k.id')
