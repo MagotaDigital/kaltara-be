@@ -17,6 +17,6 @@ use App\Http\Controllers;
 // Home
 Route::get('/', [Controllers\HomeController::class, 'index']);
 // Berita
-Route::get('/', [Controllers\BeritaController::class, 'index']);
-Route::get('/detail/{slug}', [Controllers\BeritaController::class, 'detailBerita']);
+Route::get('/berita', [Controllers\BeritaController::class, 'index']);
+Route::get('/berita/{slug}', [Controllers\BeritaController::class, 'detailBerita']);
 
