@@ -7,7 +7,7 @@
         <div class="w-100">
             <div class="swiper mySwiperHeroBerita">
                 <div class="swiper-wrapper">
-                    @foreach($berita as $item)
+                    @foreach($berita_terkini as $item)
                     <div class="swiper-slide">
                         <div style="height: 650px; background-color: gray;">
                             <div class="w-100 h-100 overflow-hidden position-relative">

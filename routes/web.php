@@ -19,4 +19,13 @@ Route::get('/', [Controllers\HomeController::class, 'index']);
 // Berita
 Route::get('/berita', [Controllers\BeritaController::class, 'index']);
 Route::get('/berita/{slug}', [Controllers\BeritaController::class, 'detailBerita']);
+// Layanan publik
+Route::get('/layanan-publik', [Controllers\LayananPublikController::class, 'index']);
+Route::get('/layanan-publik/{slug}', [Controllers\LayananPublikController::class, 'detailLayananPublik']);
+// Progam Unggulan
 
+// Selayang Pandang
+Route::get('/selayang-pandang', [Controllers\SelayangpandangController::class, 'index']);
+
+// kalender event
+Route::get('/kalender-event', [Controllers\SelayangpandangController::class, 'kalender']);

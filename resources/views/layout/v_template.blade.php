@@ -21,6 +21,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    @yield('styles')
+
 </head>
 
 <body>
@@ -48,6 +51,8 @@
     <script type="text/javascript" src="https://widget.kominfo.go.id/gpr-widget-kominfo.min.js"></script>
 
     <script src="{{ asset('template-user/js/main.js') }}"></script>
+
+    @yield('scripts')
 
 </body>
 </html>

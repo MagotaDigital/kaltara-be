@@ -16,7 +16,7 @@ class BeritaController extends Controller
 
     public function index(Request $request)
     {
-        $kategori = $request->input("kategori");
+        $kategori = $request->input('kategori');
 
         $data = [
             // nav data
@@ -28,6 +28,8 @@ class BeritaController extends Controller
             'berita_terkini' => $this->beritaModel->getBeritaTerkini(),
             'berita' => $this->beritaModel->getBerita($kategori),
         ];
+
+        $data2 = $this->beritaModel->getBerita($kategori);
 
         return view('v_berita', $data);
     }

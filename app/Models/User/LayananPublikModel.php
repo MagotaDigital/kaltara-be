@@ -34,6 +34,8 @@ class LayananPublikModel extends Model
     {
         $id_kategori = DB::table('kategori_layanan_publiks as k')->where('k.nama',$kategori)->first();
 
+        $id_kategori = $id_kategori->id;
+
         return DB::table('layanan_publiks as l')
             ->join('kategori_layanan_publiks as k', 'l.kategori_layanan_publik_id', 'k.id')
             ->select('l.*', 'k.nama as kategori')

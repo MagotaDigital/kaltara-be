@@ -55,12 +55,4 @@ class ProgamUnggulanModel extends Model
             ->get();
     }
 
-
-
-
-
-
-    // public function getDetailAp($id) {
-    //     return DB::table('anak_perusahaan')->where("id_ap", $id)->first();
-    // }
 }

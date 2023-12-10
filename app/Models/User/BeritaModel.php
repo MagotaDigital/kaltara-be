@@ -41,14 +41,14 @@ class BeritaModel extends Model
             ->get();
     }
     public function getBerita($kategori){
-        $id_kategori = DB::table('kategori_beritas as k')->select('k.id')->where('k.nama', $kategori)->first();
+        $id_kategori = DB::table('kategori_beritas')->where('nama', $kategori)->first();
 
         $id_kategori = $id_kategori->id;
 
         return DB::table('beritas as b')
             ->join('kategori_beritas as k','b.kategori_berita_id','k.id')
             ->select('b.*','k.nama as kategori')
-            ->where('b.slug',$id_kategori)
+            ->where('b.kategori_berita_id',$id_kategori)
             ->get();
     }
     public function getDetailBerita($slug){

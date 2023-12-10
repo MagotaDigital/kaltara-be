@@ -29,7 +29,7 @@ class LayananPublikController extends Controller
             'kategori_layanan' => $this->layananpublikModel->getKategoriLayanan($kategori),
         ];
 
-        return view('v_layanan_publik', $data);
+        return view('v_Layananpublik', $data);
     }
 
     public function detailLayananPublik($slug)
@@ -44,6 +44,6 @@ class LayananPublikController extends Controller
             'layanan_publik' => $this->layananpublikModel->getDetailLayanan($slug),
         ];
 
-        return view('v_detail_berita', $data);
+        return view('v_detaillayanan', $data);
     }
 }
