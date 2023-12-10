@@ -27,6 +27,7 @@ class HomeController extends Controller
             'progam_unggulan' => $this->homeModel->getProgamUnggulan(),
             'akses_cepat' => $this->homeModel->getAksesCepat(),
             'arsip_dokumen' => $this->homeModel->getArsipDokumen(),
+            'kategori_layanan_publik' => $this->homeModel->getKategoriLayananPublik(),
         ];
 
         return view('v_home', $data);

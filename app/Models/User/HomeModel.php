@@ -70,6 +70,11 @@ class HomeModel extends Model
             ->get();
     }
 
+    public function getKategoriLayananPublik()
+    {
+        return DB::table('kategori_layanan_publiks')->get();
+    }
+
 
 
     // public function getDetailAp($id) {
