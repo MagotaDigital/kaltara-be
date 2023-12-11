@@ -721,45 +721,6 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="list-item">
-                                        <div class="img">
-                                            <img src="https://file.jabarprov.go.id/live/media/img/unit-logo/46.%20Logo%20SATPOL%20PP.png" alt="">
-                                        </div>
-                                        <div class="font-primary">
-                                            <p class="fw-bold">Satuan Polisi Pamong Praja Provinsi Jawa Barat.</p>
-                                            <p>Drs. Mochamad Ade Afriandi, M.T.</p>
-                                            <address class="mt-2">Jl. Banda No. 28, Kota Bandung, Telp. 022- 4235883</address>
-                                            <a href="" class="btn-fill fw-semibold d-flex justify-content-between d-sm-inline-block py-2 px-3">Kunjungi website <i class="ri-share-box-line"></i></a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list-item">
-                                        <div class="img">
-                                            <img src="https://file.jabarprov.go.id/live/media/img/unit-logo/46.%20Logo%20SATPOL%20PP.png" alt="">
-                                        </div>
-                                        <div class="font-primary">
-                                            <p class="fw-bold">Satuan Polisi Pamong Praja Provinsi Jawa Barat.</p>
-                                            <p>Drs. Mochamad Ade Afriandi, M.T.</p>
-                                            <address class="mt-2">Jl. Banda No. 28, Kota Bandung, Telp. 022- 4235883</address>
-                                            <a href="" class="btn-fill fw-semibold d-flex justify-content-between d-sm-inline-block py-2 px-3">Kunjungi website <i class="ri-share-box-line"></i></a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list-item">
-                                        <div class="img">
-                                            <img src="https://file.jabarprov.go.id/live/media/img/unit-logo/46.%20Logo%20SATPOL%20PP.png" alt="">
-                                        </div>
-                                        <div class="font-primary">
-                                            <p class="fw-bold">Satuan Polisi Pamong Praja Provinsi Jawa Barat.</p>
-                                            <p>Drs. Mochamad Ade Afriandi, M.T.</p>
-                                            <address class="mt-2">Jl. Banda No. 28, Kota Bandung, Telp. 022- 4235883</address>
-                                            <a href="" class="btn-fill fw-semibold d-flex justify-content-between d-sm-inline-block py-2 px-3">Kunjungi website <i class="ri-share-box-line"></i></a>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
                             <nav class="pagination">
                                 <div class="font-primary d-flex align-items-center">

@@ -56,30 +56,14 @@
         <div class="regular-slider">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    @foreach($penghargaan as $item)
                     <div class="swiper-slide font-primary p-3">
                         <i class="ri-trophy-fill"></i>
-                        <p class="fw-bold fs-5">Best Govermor</p>
-                        <span class="mb-3 d-block">People of the Year 2021</span>
-                        <p class="lh-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus tempore ullam harum aperiam earum illum iusto asperiores qui itaque fuga!</p>
+                        <p class="fw-bold fs-5">{{$item->nama}}</p>
+                        <span class="mb-3 d-block">{{$item->kategori}}</span>
+                        <p class="lh-120">{{$item->deskripsi}}</p>
                     </div>
-                    <div class="swiper-slide font-primary p-3">
-                        <i class="ri-trophy-fill"></i>
-                        <p class="fw-bold fs-5">Best Govermor</p>
-                        <span class="mb-3 d-block">People of the Year 2021</span>
-                        <p class="lh-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus tempore ullam harum aperiam earum illum iusto asperiores qui itaque fuga!</p>
-                    </div>
-                    <div class="swiper-slide font-primary p-3">
-                        <i class="ri-trophy-fill"></i>
-                        <p class="fw-bold fs-5">Best Govermor</p>
-                        <span class="mb-3 d-block">People of the Year 2021</span>
-                        <p class="lh-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus tempore ullam harum aperiam earum illum iusto asperiores qui itaque fuga!</p>
-                    </div>
-                    <div class="swiper-slide font-primary p-3">
-                        <i class="ri-trophy-fill"></i>
-                        <p class="fw-bold fs-5">Best Govermor</p>
-                        <span class="mb-3 d-block">People of the Year 2021</span>
-                        <p class="lh-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus tempore ullam harum aperiam earum illum iusto asperiores qui itaque fuga!</p>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -90,9 +74,9 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-        <div class="d-flex justify-content-center">
+        {{-- <div class="d-flex justify-content-center">
             <a href="" class="btn-bordered d-flex justify-content-between align-items-center d-sm-inline-block mt-4 font-primary">Lihat Semua Penghargaan Provinsi Kalimantan Utara <i class="ri-share-box-line"></i></a>
-        </div>
+        </div> --}}
 
         <div class="row priority mt-5 p-4 g-3">
             <div class="col-md-3 d-none d-sm-block">

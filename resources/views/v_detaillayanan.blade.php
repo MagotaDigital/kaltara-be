@@ -8,16 +8,14 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                        <li class="breadcrumb-item"><a href="#">Kependudukan dan Tempat Tinggal</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Sistem Informasi Data Kependudukan
-                            (SIDATUK)</li>
+                        <li class="breadcrumb-item">{{ $layanan_publik->kategori }}</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $layanan_publik->nama }}</li>
 
                     </ol>
                 </nav>
                 <div class="hero-desc">
-                    <p class="fs-3 font-title">Sistem Informasi Data Kependudukan (SIDATUK)</p>
-                    <p class="font-primary">Fasilitas untuk mempermudah seluruh masyarakat Jawa Barat dalam menyampaikan
-                        aduan data administrasi kependudukan secara digital</p>
+                    <p class="fs-3 font-title">{{ $layanan_publik->nama }}</p>
+                    <p class="font-primary">{{ $layanan_publik->deskripsi_singkat }}</p>
                 </div>
             </div>
         </div>
@@ -40,38 +38,19 @@
                     <div class="mt-3">
                         <div class="swiper mySwiperInfografis">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="rounded"
-                                        src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        alt="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        style="height: 353px; object-fit: cover;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="rounded"
-                                        src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        alt="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        style="height: 353px; object-fit: cover;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="rounded"
-                                        src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        alt="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        style="height: 353px; object-fit: cover;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="rounded"
-                                        src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        alt="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        style="height: 353px; object-fit: cover;">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="rounded"
-                                        src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        alt="https://dvgddkosknh6r.cloudfront.net/live/media/img/1690286280-Nama-Resize.jpg"
-                                        style="height: 353px; object-fit: cover;">
-                                </div>
-                            </div>
+                                @php
+                                    $gambarArray = json_decode($layanan_publik->gambar, true);
+                                @endphp
 
+                                @if (is_array($gambarArray))
+                                    @foreach ($gambarArray as $image)
+                                        <div class="swiper-slide">
+                                            <img class="rounded" src="{{ asset('storage') }}/{{ trim($image) }}" alt="image" style="height: 353px; object-fit: cover;">
+                                        </div>
+                                    @endforeach
+                                @endif
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,19 +60,17 @@
                     <p class="font-title fs-3 text-blue fw-bold pb-3 pt-5">Deskripsi</p>
                     <div class="mt-3">
                         <ul class="d-flex justify-items-center gap-4 w-100" style="list-style: none;">
-                            <li class="bg-[#F9FAFB] p-4 rounded-xl w-100">
+                            <li class="p-4 rounded w-100">
                                 <div class="row w-100 h-100">
                                     <div class="col-1">
-                                        <svg height="10" width="10" class="min-w-[10px] mt-[7px]">
+                                        <svg height="10" width="10">
                                             <circle cx="5" cy="5" r="5" fill="#4DC27E"></circle>
                                         </svg>
                                     </div>
                                     <div class="col-11">
-                                        <p class="w-100 font-lato text-left text-blue-gray-900"><span
-                                                class="font-normal leading-[23px] text-sm ">
-                                                Validasi data kependudukan berdasarkan kriteria permasalahan tertentu
-                                            </span> <span class="font-normal leading-[23px] text-sm"
-                                                style="display:none;"></span></p>
+                                        <p class="w-100 font-lato text-left ">
+                                            {!! $layanan_publik->deskripsi !!}
+                                        </p>
                                     </div>
 
                                 </div>

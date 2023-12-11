@@ -119,10 +119,10 @@
 </nav>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopberita" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
+        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
             <div class="container mx-auto position-relative">
                 <img src="images/burung.png" alt="" class="position-absolute burung">
-                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Berita Kalimantan Utara</a>
                         <div class="row gy-5">
@@ -148,10 +148,10 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopLayanan" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
+        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
-                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Layanan Publik</a>
                         <div class="row gy-5">
@@ -177,10 +177,10 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopDashboard" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
+        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
-                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href=""class="text-white font-primary fs-3 leading-10">Dashboard Publik</a>
                         <div class="row gy-5">
@@ -206,10 +206,10 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopProfil" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
+        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
-                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Profil Kalimantan Utara</a>
                         <div class="row gy-5">
@@ -260,10 +260,10 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopPPID" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
+        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
-                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">PPID</a>
                         <div class="row gy-5">
