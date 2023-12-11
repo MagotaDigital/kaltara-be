@@ -28,8 +28,6 @@
 
                         <a class="nav-link" href="#" id="lap-pertanggungjawaban-tab" data-bs-toggle="pill" data-bs-target="#pills-lap-pertanggungjawaban" type="button" role="tab" aria-controls="pills-lap-pertanggungjawaban" aria-selected="false">Laporan Pertanggungjawaban</a>
 
-                        <!-- <a class="nav-link" href="#" id="produkhukum-tab" data-bs-toggle="pill" data-bs-target="#pills-produkhukum" type="button" role="tab" aria-controls="pills-produkhukum" aria-selected="false">Produk Hukum</a> -->
-
                         <a class="nav-link" href="#" id="kepegawain-tab" data-bs-toggle="pill" data-bs-target="#pills-kepegawain" type="button" role="tab" aria-controls="pills-kepegawain" aria-selected="false">Transparansi Kepegawaian</a>
 
                         <a class="nav-link" href="#" id="keuangan-tab" data-bs-toggle="pill" data-bs-target="#pills-keuangan" type="button" role="tab" aria-controls="pills-keuangan" aria-selected="false">Transparansi Pengelolaan Keuangan Daerah</a>
