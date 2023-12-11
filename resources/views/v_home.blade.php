@@ -66,7 +66,7 @@
                                 class="mt-1 mt-md-4 w-100 d-flex justify-content-center align-items-center gap-2 py-2 ps-1 pe-1 btn btn-sm btn-secondary bg-secondary bg-opacity-10"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: fit-content;">
                                 <span aria-hidden="true"
-                                    style="mask-image:url(images/icons/feedback.svg);mask-repeat:no-repeat;mask-size:100% 100%;-webkit-mask-image:url(images/icons/feedback.svg);-webkit-mask-repeat:no-repeat;-webkit-mask-size:100% 100%;background-color:white;height:20px;width:20px;display:inline-block;"></span>
+                                    style="mask-image:url({{asset('template-user/icon/feedback.svg')}});mask-repeat:no-repeat;mask-size:100% 100%;-webkit-mask-image:url({{asset('template-user/icon/feedback.svg')}});-webkit-mask-repeat:no-repeat;-webkit-mask-size:100% 100%;background-color:white;height:20px;width:20px;display:inline-block;"></span>
                                 <div class="text-white">
                                     Kritik dan Saran
                                 </div>
@@ -169,14 +169,14 @@
             <div class="row align-items-md-end align-items-center">
                 <div class="col-12 col-md-6 col-lg-9 mb-4">
                     <section class="w-100 h-100 gap-4">
-                        <div class="d-flex flex-column flex-md-row align-items-center gap-2 mb-5">
-                            <h1 class="fw-medium" style="font-size: 28px;">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-2 mb-md-5 mb-2">
+                            <h1 class="fw-semibold" style="font-size: 28px;">
                                 Berita Terkini
                             </h1>
                             <div class="d-flex justify-content-center flex-column text-center" style="flex: 1 1 0%;">
                                 <div class="border-bottom"></div>
                             </div>
-                            <a href="/berita" tabindex="-1" class="">
+                            <a href="{{url('berita')}}?kategori={{ $kategori_berita[0]->nama }}" tabindex="-1" class="d-none d-md-block">
                                 <button class="d-flex justify-content-between btn-sm font-sans btn btn-fill">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         class="animate-spin -ml-1 h-4 w-4 text-white" style="display:none;">
@@ -218,48 +218,7 @@
                                             <div class="visible d-inline-block  position-absolute bottom-0 bg-dark bg-opacity-50 rounded px-3 py-4 text-white"
                                                 style="backdrop-filter: blur(8px); height: fit-content;">
                                                 <div class="d-flex flex-column">
-                                                    <!-- <div class="d-md-none d-flex align-items-center justify-content-between py-2 px-3 rounded bg-white bg-opacity-50 mb-4"
-                                                        data-v-47d3243a="">
-                                                        <button aria-label="Berita Sebelumnya"
-                                                            class="btn btn-sm btn-secondary bg-secondary bg-opacity-10"
-                                                            data-v-47d3243a="">
-                                                            <div aria-hidden="true"
-                                                                class="d-flex justify-content-center align-items-center"
-                                                                style="width:10px;height:10px;" data-v-47d3243a="">
-                                                                <i class="mb-1"><svg width="20" height="20"
-                                                                        viewBox="0 0 20 20" fill="currentColor"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        style="width: 10px; height: 10px; transform: rotate(0deg); fill: currentcolor;">
-                                                                        <path
-                                                                            d="M5.27151 10.7024L12.8463 18.7124C13.0215 18.8979 13.2554 19 13.5047 19C13.7541 19 13.988 18.8979 14.1632 18.7124L14.721 18.1227C15.084 17.7384 15.084 17.1138 14.721 16.7301L8.36027 10.0037L14.7281 3.26988C14.9033 3.08447 15 2.8373 15 2.57374C15 2.30989 14.9033 2.06272 14.7281 1.87716L14.1702 1.28756C13.9949 1.10214 13.7612 0.999999 13.5118 0.999999C13.2624 0.999999 13.0286 1.10214 12.8534 1.28756L5.27151 9.30496C5.0959 9.49096 4.99945 9.7393 5 10.0033C4.99945 10.2683 5.0959 10.5165 5.27151 10.7024Z">
-                                                                        </path>
-                                                                    </svg></i>
-                                                            </div>
-                                                        </button>
-                                                        <p class="text-white" data-v-47d3243a="">
-                                                            <span
-                                                                class="fw-bold ms-1" data-v-47d3243a="">
-                                                                1
-                                                            </span>
-                                                            dari 5
-                                                        </p>
-                                                        <button aria-label="Berita Selanjutnya"
-                                                            class="btn btn-sm btn-secondary bg-secondary bg-opacity-10"
-                                                            data-v-47d3243a="">
-                                                            <div aria-hidden="true"
-                                                                class="d-flex justify-content-center align-items-center"
-                                                                style="width:10px;height:10px;" data-v-47d3243a="">
-                                                                <i class="mb-1"><svg width="20" height="20"
-                                                                        viewBox="0 0 20 20" fill="currentColor"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        style="width: 10px; height: 10px; transform: rotate(0deg); fill: currentcolor;">
-                                                                        <path
-                                                                            d="M14.7285 9.29764L7.15369 1.28756C6.97849 1.10215 6.74462 1 6.49525 1C6.24588 1 6.01201 1.10215 5.83682 1.28756L5.27898 1.87731C4.916 2.2616 4.916 2.88618 5.27898 3.26988L11.6397 9.99627L5.27193 16.7301C5.09673 16.9155 5 17.1627 5 17.4263C5 17.6901 5.09673 17.9373 5.27193 18.1228L5.82976 18.7124C6.00509 18.8979 6.23883 19 6.4882 19C6.73757 19 6.97144 18.8979 7.14663 18.7124L14.7285 10.695C14.9041 10.509 15.0006 10.2607 15 9.99671C15.0006 9.73169 14.9041 9.48349 14.7285 9.29764Z">
-                                                                        </path>
-                                                                    </svg></i>
-                                                            </div>
-                                                        </button>
-                                                    </div> -->
+
                                                     <div class="flex-grow-0">
                                                         <p class="font-roboto opacity-75 mb-1">
                                                             <small>{{ $berita_terkini[0]->kategori }}</small>
@@ -275,18 +234,18 @@
                                                             class="d-flex flex-column flex-md-row gap-2 opacity-50 mb-2">
                                                             <p class="d-flex align-items-center gap-2"
                                                                 style="font-size: 12px;">
-                                                                <img src="images/icons/calendar.svg" width="16px"
+                                                                <img src="{{asset('template-user/icon/calendar.svg')}}" width="16px"
                                                                     height="16px" aria-hidden="true">
                                                                 <span class="sr-only">Diterbitkan pada</span>
                                                                 <span>{{
                                                                     Carbon\Carbon::parse($berita_terkini[0]->tanggal_rilis)->format('l,
                                                                     d F Y') }}</span>
                                                             </p>
-                                                            <p class="ps-2 d-flex align-items-center gap-1 capitalize"
+                                                            <p class="ps-md-2 ps-0 d-flex align-items-center gap-1 capitalize"
                                                                 style="font-size: 12px;">
-                                                                <img src="images/icons/pen.svg" width="16px"
+                                                                <img src="{{asset('template-user/icon/pen.svg')}}" width="16px"
                                                                     height="16px" aria-hidden="true">
-                                                                <span class="text-truncate">Penulis : {{
+                                                                <span class="text-truncate"> Penulis : {{
                                                                     $berita_terkini[0]->penulis }}</span>
                                                             </p>
                                                         </div>

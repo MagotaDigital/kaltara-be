@@ -127,7 +127,7 @@
                         <p class="text-white font-primary fs-3 leading-10">Berita Kalimantan Utara</p>
                         <div class="row g-0">
                             @foreach ($kategori_berita as $item)
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('berita')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -156,7 +156,7 @@
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Layanan Publik</a>
                         <div class="row g-0">
                             @foreach ($kategori_layanan_publik as $item)
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('layanan-publik')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -185,7 +185,7 @@
                         <a href=""class="text-white font-primary fs-3 leading-10">Dashboard Publik</a>
                         <div class="row g-0">
                             @foreach ($dashboard_publik as $item)
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -213,7 +213,7 @@
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Profil Kalimantan Utara</a>
                         <div class="row g-0">
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('selayang-pandang')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/selayang-pandang.svg') }}" alt="Selayang Pandang" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -222,7 +222,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('tentang')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Ekonomi" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -231,7 +231,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('arsip-dokumen')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/arsip-dan-dokumen.svg') }}" alt="Arsip dan Dokumen" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -240,7 +240,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('kalender-event')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Kalender-event" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -268,7 +268,7 @@
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">PPID</a>
                         <div class="row g-0">
                             @foreach ($ppid as $item)
-                            <div class="col-4 text-white pb-md-3">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
