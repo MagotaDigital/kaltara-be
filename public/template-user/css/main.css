@@ -51,6 +51,9 @@ a{
         height: 130px;
     }
 }
+.cursor-pointer{
+    cursor: pointer!important;
+}
 /* ===================================Button Class */
 .btn-fill-white{
     background-color: #fff;
@@ -964,7 +967,7 @@ footer .copyright{
 
 .list-card {
     background-color: #fff;
-    
+
 }
 
 .list-card:hover {
