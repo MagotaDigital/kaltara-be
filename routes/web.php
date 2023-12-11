@@ -28,5 +28,7 @@ Route::get('/program-unggulan', [Controllers\ProgramUnggulanController::class, '
 Route::get('/selayang-pandang', [Controllers\SelayangpandangController::class, 'index']);
 // Tentang
 Route::get('/tentang', [Controllers\TentangController::class, 'index']);
+// Arsip Dokumen
+Route::get('/arsip-dokumen', [Controllers\ArsipDokumenController::class, 'index']);
 // kalender event
 // Route::get('/kalender-event', [Controllers\SelayangpandangController::class, 'kalender']);

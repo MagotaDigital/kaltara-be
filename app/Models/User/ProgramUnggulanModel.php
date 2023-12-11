@@ -41,6 +41,8 @@ class ProgramUnggulanModel extends Model
     {
         $id_kategori = DB::table('kategori_progam_unggulans as k')->where('k.nama',$kategori)->first();
 
+        $id_kategori = $id_kategori->id;
+
         return DB::table('progam_unggulans as p')
             ->join('kategori_progam_unggulans as k', 'p.kategori_progam_unggulan_id', 'k.id')
             ->select('p.*', 'k.nama as kategori')
@@ -50,8 +52,8 @@ class ProgramUnggulanModel extends Model
 
     public function getKategoriProgram()
     {
-        return DB::table('kategori_layanan_publiks')
-            ->select('kategori_layanan_publiks.nama as nama_kategori')
+        return DB::table('kategori_progam_unggulans')
+            ->select('kategori_progam_unggulans.nama as nama')
             ->get();
     }
 

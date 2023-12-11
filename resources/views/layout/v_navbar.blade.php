@@ -119,15 +119,15 @@
 </nav>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopberita" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
+        <section class="bg-blue pb-md-3 pt-md-5 position-absolute start-0 end-0 overflow-auto">
             <div class="container mx-auto position-relative">
-                <img src="images/burung.png" alt="" class="position-absolute burung">
-                <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
+                <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
+                <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
-                        <a href="/berita"class="text-white font-primary fs-3 leading-10">Berita Kalimantan Utara</a>
-                        <div class="row gy-5">
+                        <p class="text-white font-primary fs-3 leading-10">Berita Kalimantan Utara</p>
+                        <div class="row g-0">
                             @foreach ($kategori_berita as $item)
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('berita')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -148,15 +148,15 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopLayanan" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
+    <section class="bg-blue pb-md-3 pt-md-5 position-absolute start-0 end-0 overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Layanan Publik</a>
-                        <div class="row gy-5">
+                        <div class="row g-0">
                             @foreach ($kategori_layanan_publik as $item)
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('layanan-publik')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -168,7 +168,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
             </div>
@@ -177,15 +177,15 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopDashboard" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
+    <section class="bg-blue pb-md-3 pt-md-5 position-absolute start-0 end-0 overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href=""class="text-white font-primary fs-3 leading-10">Dashboard Publik</a>
-                        <div class="row gy-5">
+                        <div class="row g-0">
                             @foreach ($dashboard_publik as $item)
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -206,14 +206,14 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopProfil" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
+    <section class="bg-blue pb-md-3 pt-md-5 position-absolute start-0 end-0 overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Profil Kalimantan Utara</a>
-                        <div class="row gy-5">
-                            <div class="col-4 text-white">
+                        <div class="row g-0">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('selayang-pandang')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/selayang-pandang.svg') }}" alt="Selayang Pandang" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -222,7 +222,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('tentang')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Ekonomi" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -231,7 +231,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('arsip-dokumen')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/arsip-dan-dokumen.svg') }}" alt="Arsip dan Dokumen" class="mt-1 icon">
                                     <div class="ms-3 text-white">
@@ -240,12 +240,12 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{url('kalender-event')}}" class="d-flex align-items-start">
                                     <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Kalender-event" class="mt-1 icon">
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Kalender Event</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis velit, quia ipsa tempore magnam eligendi repellendus aliquid laboriosam soluta saepe dignissimos ratione minus! Quibusdam, error sint. Ut, consectetur impedit.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                                     </div>
                                 </a>
                             </div>
@@ -260,15 +260,15 @@
 </div>
 <div class="offcanvas navbar-item offcanvas-top" tabindex="-1" id="offcanvasTopPPID" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-body">
-        <section class="bg-blue py-3 position-absolute start-0 end-0 border-t overflow-auto">
+    <section class="bg-blue pb-md-3 pt-md-5 position-absolute start-0 end-0 overflow-auto">
             <div class="container mx-auto position-relative">
                 <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">PPID</a>
-                        <div class="row gy-5">
+                        <div class="row g-0">
                             @foreach ($ppid as $item)
-                            <div class="col-4 text-white">
+                            <div class="col-4 text-white pb-md-3 pe-md-3">
                                 <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
                                     <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">

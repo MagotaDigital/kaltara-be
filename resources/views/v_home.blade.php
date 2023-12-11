@@ -66,7 +66,7 @@
                                 class="mt-1 mt-md-4 w-100 d-flex justify-content-center align-items-center gap-2 py-2 ps-1 pe-1 btn btn-sm btn-secondary bg-secondary bg-opacity-10"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: fit-content;">
                                 <span aria-hidden="true"
-                                    style="mask-image:url(images/icons/feedback.svg);mask-repeat:no-repeat;mask-size:100% 100%;-webkit-mask-image:url(images/icons/feedback.svg);-webkit-mask-repeat:no-repeat;-webkit-mask-size:100% 100%;background-color:white;height:20px;width:20px;display:inline-block;"></span>
+                                    style="mask-image:url({{asset('template-user/icon/feedback.svg')}});mask-repeat:no-repeat;mask-size:100% 100%;-webkit-mask-image:url({{asset('template-user/icon/feedback.svg')}});-webkit-mask-repeat:no-repeat;-webkit-mask-size:100% 100%;background-color:white;height:20px;width:20px;display:inline-block;"></span>
                                 <div class="text-white">
                                     Kritik dan Saran
                                 </div>
@@ -169,14 +169,14 @@
             <div class="row align-items-md-end align-items-center">
                 <div class="col-12 col-md-6 col-lg-9 mb-4">
                     <section class="w-100 h-100 gap-4">
-                        <div class="d-flex flex-column flex-md-row align-items-center gap-2 mb-5">
-                            <h1 class="fw-medium" style="font-size: 28px;">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-2 mb-md-5 mb-2">
+                            <h1 class="fw-semibold" style="font-size: 28px;">
                                 Berita Terkini
                             </h1>
                             <div class="d-flex justify-content-center flex-column text-center" style="flex: 1 1 0%;">
                                 <div class="border-bottom"></div>
                             </div>
-                            <a href="/berita" tabindex="-1" class="">
+                            <a href="{{url('berita')}}?kategori={{ $kategori_berita[0]->nama }}" tabindex="-1" class="d-none d-md-block">
                                 <button class="d-flex justify-content-between btn-sm font-sans btn btn-fill">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         class="animate-spin -ml-1 h-4 w-4 text-white" style="display:none;">
@@ -217,6 +217,7 @@
                                             <div class="w-100 d-inline-block position-absolute bottom-0 bg-dark bg-opacity-50 rounded px-3 py-4 text-white"
                                                 style="backdrop-filter: blur(8px); height: fit-content;">
                                                 <div class="d-flex flex-column">
+
                                                     <div class="flex-grow-0">
                                                         <p class="font-roboto opacity-75 mb-1">
                                                             <small>{{ $berita_terkini[0]->kategori }}</small>
@@ -232,16 +233,16 @@
                                                             class="d-flex flex-column flex-md-row gap-2 opacity-50 mb-2">
                                                             <p class="d-flex align-items-center gap-2"
                                                                 style="font-size: 12px;">
-                                                                <img src="images/icons/calendar.svg" width="16px"
+                                                                <img src="{{asset('template-user/icon/calendar.svg')}}" width="16px"
                                                                     height="16px" aria-hidden="true">
                                                                 <span class="sr-only">Diterbitkan pada</span>
                                                                 <span>{{Carbon\Carbon::parse($berita_terkini[0]->tanggal_rilis)->format('l, d F Y') }}</span>
                                                             </p>
-                                                            <p class="ps-2 d-flex align-items-center gap-1 capitalize"
+                                                            <p class="ps-md-2 ps-0 d-flex align-items-center gap-1 capitalize"
                                                                 style="font-size: 12px;">
-                                                                <img src="images/icons/pen.svg" width="16px"
+                                                                <img src="{{asset('template-user/icon/pen.svg')}}" width="16px"
                                                                     height="16px" aria-hidden="true">
-                                                                <span class="text-truncate">Penulis : {{
+                                                                <span class="text-truncate"> Penulis : {{
                                                                     $berita_terkini[0]->penulis }}</span>
                                                             </p>
                                                         </div>

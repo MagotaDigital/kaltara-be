@@ -13,7 +13,7 @@
                 </nav>
                 <div class="hero-desc">
                     <p class="fs-3 font-title">Arsip dan Dokumen</p>
-                    <p class="font-primary">Akses dan unduh dokumen resmi yang dirilis Pemerintah Jawa Barat.</p>
+                    <p class="font-primary">Akses dan unduh dokumen resmi yang dirilis Pemerintah Kalimantan Utara.</p>
                 </div>
             </div>
         </div>
@@ -27,8 +27,6 @@
                         <a class="nav-link active" aria-current="page" href="#" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dokumen Perencanaan</a>
 
                         <a class="nav-link" href="#" id="lap-pertanggungjawaban-tab" data-bs-toggle="pill" data-bs-target="#pills-lap-pertanggungjawaban" type="button" role="tab" aria-controls="pills-lap-pertanggungjawaban" aria-selected="false">Laporan Pertanggungjawaban</a>
-
-                        <a class="nav-link" href="#" id="produkhukum-tab" data-bs-toggle="pill" data-bs-target="#pills-produkhukum" type="button" role="tab" aria-controls="pills-produkhukum" aria-selected="false">Produk Hukum</a>
 
                         <a class="nav-link" href="#" id="kepegawain-tab" data-bs-toggle="pill" data-bs-target="#pills-kepegawain" type="button" role="tab" aria-controls="pills-kepegawain" aria-selected="false">Transparansi Kepegawaian</a>
 
@@ -77,7 +75,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <nav class="pagination">
+                            <!-- <nav class="pagination">
                                 <div class="font-primary d-flex align-items-center">
                                     <p>Tampilkan</p>
                                     <select class="form-select mx-2">
@@ -98,7 +96,7 @@
                                     <a href="" class="border border-top-0 border-bottom-0 px-2 ms-2"><i class="ri-arrow-left-s-line"></i></a>
                                     <a href="" class="px-2"><i class="ri-arrow-right-s-line"></i></a>
                                 </div>
-                            </nav>
+                            </nav> -->
                         </div>
                     </div>
                 </div>
@@ -144,7 +142,8 @@
                                     </div>
                                 </li>
                             </ul>
-                            <nav class="pagination">
+
+                            <!-- <nav class="pagination">
                                 <div class="font-primary d-flex align-items-center">
                                     <p>Tampilkan</p>
                                     <select class="form-select mx-2">
@@ -165,66 +164,7 @@
                                     <a href="" class="border border-top-0 border-bottom-0 px-2 ms-2"><i class="ri-arrow-left-s-line"></i></a>
                                     <a href="" class="px-2"><i class="ri-arrow-right-s-line"></i></a>
                                 </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TAB KETIGA -->
-                <div class="tab-pane fade" id="pills-produkhukum" role="tabpanel" aria-labelledby="produkhukum-tab" tabindex="0">
-                    <p class="font-title fs-3 text-blue fw-bold pb-3">Produk Hukum</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="search-bar font-primary">
-                                <form action="">
-                                    <i class="ri-search-line"></i>
-                                    <input type="search" id="cari" for="cari" placeholder="Cari Kabupatan atau Kota"/>
-                                    <button>Cari</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 mt-5">
-                            <ul class="list-perangkat">
-                                <li>
-                                    <div class="list-item">
-                                        <div class="img">
-                                            <img src="assets/img/pdf.svg" alt="">
-                                        </div>
-                                        <div class="font-primary">
-                                            <span class="border border-1 bg-body-tertiary p-2 rounded">Produk Hukum</span>
-                                            <p class="fw-bold fs-5 mt-3">Laporan Evaluasi Hasil Rencana Kegiatan Pemerintah Daerah (RKPD) Triwulan II Tahun 2023</p>
-                                            <p class="mb-3">Laporan Evaluasi Hasil Rencana Kegiatan Pemerintah Daerah (RKPD) Triwulan II Tahun 2023 berisi gambaran tingkat capaian kinerja dan tingkat capaian anggaran program pembangunan di seluruh Perangkat Daerah Jawa Barat.</p>
-                                            <div>
-                                                <a href="" class="btn-bordered fw-semibold d-flex justify-content-between d-sm-inline-block py-2 px-3 me-2" style="border-radius: 10px;"><i class="ri-eye-line me-2"></i> Lihat</a>
-                                                <a href="" class="btn-fill fw-semibold d-flex justify-content-between d-sm-inline-block py-2 px-3"><i class="ri-download-2-fill me-2"></i> Unduh</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <nav class="pagination">
-                                <div class="font-primary d-flex align-items-center">
-                                    <p>Tampilkan</p>
-                                    <select class="form-select mx-2">
-                                        <option value="5" selected>5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                    </select>
-                                    <p>item dari total <strong>46</strong></p>
-                                </div>
-                                <div class="font-primary d-flex align-items-center justify-content-end">
-                                    <p>Halaman</p>
-                                    <select class="form-select mx-2">
-                                        <option value="5" selected>1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <p>dari 10</p>
-                                    <a href="" class="border border-top-0 border-bottom-0 px-2 ms-2"><i class="ri-arrow-left-s-line"></i></a>
-                                    <a href="" class="px-2"><i class="ri-arrow-right-s-line"></i></a>
-                                </div>
-                            </nav>
+                            </nav> -->
                         </div>
                     </div>
                 </div>
@@ -262,7 +202,8 @@
                                     </div>
                                 </li>
                             </ul>
-                            <nav class="pagination">
+
+                            <!-- <nav class="pagination">
                                 <div class="font-primary d-flex align-items-center">
                                     <p>Tampilkan</p>
                                     <select class="form-select mx-2">
@@ -283,7 +224,7 @@
                                     <a href="" class="border border-top-0 border-bottom-0 px-2 ms-2"><i class="ri-arrow-left-s-line"></i></a>
                                     <a href="" class="px-2"><i class="ri-arrow-right-s-line"></i></a>
                                 </div>
-                            </nav>
+                            </nav> -->
                         </div>
                     </div>
                 </div>
@@ -321,7 +262,8 @@
                                     </div>
                                 </li>
                             </ul>
-                            <nav class="pagination">
+
+                            <!-- <nav class="pagination">
                                 <div class="font-primary d-flex align-items-center">
                                     <p>Tampilkan</p>
                                     <select class="form-select mx-2">
@@ -342,7 +284,7 @@
                                     <a href="" class="border border-top-0 border-bottom-0 px-2 ms-2"><i class="ri-arrow-left-s-line"></i></a>
                                     <a href="" class="px-2"><i class="ri-arrow-right-s-line"></i></a>
                                 </div>
-                            </nav>
+                            </nav> -->
                         </div>
                     </div>
                 </div>

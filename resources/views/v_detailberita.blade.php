@@ -3,7 +3,7 @@
 @section('content')
 <main>
     <section class="position-relative w-100 mt-md-5 mt-3"
-        style="min-height: 422px; background-size: cover; background-repeat: no-repeat; background-position: center; background-image: radial-gradient(56.33% 56.33% at 50.59% 43.67%, rgba(0, 23, 28, 0.5) 0%, rgba(0, 11, 14, 0.7) 46.15%, rgba(0, 11, 14, 0.82) 100%), url('https://dvgddkosknh6r.cloudfront.net/live/media/img/1701566222-minggu1.jpeg');">
+        style="min-height: 422px; background-size: cover; background-repeat: no-repeat; background-position: center; background-image: radial-gradient(56.33% 56.33% at 50.59% 43.67%, rgba(0, 23, 28, 0.5) 0%, rgba(0, 11, 14, 0.7) 46.15%, rgba(0, 11, 14, 0.82) 100%), url({{asset('storage')}}/{{$berita->gambar}});">
 
         <div class="container-fluid position-absolute bottom-0 start-0 mb-md-5 mb-3 px-md-5 px-3" style="z-index: 10;">
             <h1 class="font-lora fw-bold text-white mb-3">
@@ -94,9 +94,9 @@
                         <div class="d-flex justify-content-center align-items-center ms-2"
                             style="width: 16px; height: 16px;">
                             <i>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="white"
                                     xmlns="http://www.w3.org/20" style=" width: 16px; height: 16px; transform: rotate(0deg); fill:
-                                        currentcolor;">
+                                        white;">
                                     <path
                                         d="M1 10C1 11.654 2.346 13 4 13C4.794 13 5.512 12.685 6.049 12.18L12.04 15.604C12.022 15.734 12 15.864 12 16C12 17.654 13.346 19 15 19C16.654 19 18 17.654 18 16C18 14.346 16.654 13 15 13C14.206 13 13.488 13.315 12.951 13.82L6.96 10.397C6.978 10.266 7 10.136 7 10C7 9.864 6.978 9.734 6.96 9.603L12.951 6.18C13.488 6.685 14.206 7 15 7C16.654 7 18 5.654 18 4C18 2.346 16.654 1 15 1C13.346 1 12 2.346 12 4C12 4.136 12.022 4.266 12.04 4.397L6.049 7.82C5.496 7.29468 4.76273 7.00123 4 7C2.346 7 1 8.346 1 10Z">
                                     </path>
@@ -112,18 +112,18 @@
 
     <section>
         <div class="container">
-            <div class="row g-0 mt-md-">
+            <div class="row g-0 my-md-5 my-3">
                 <div class="col-12 col-md-8">
                     <p class="mb-md-4 mb-3">
-                        <img src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1701786457-Screenshot_20231205-105731_WhatsApp.jpg"
+                        <img src="{{asset('storage')}}/{{$berita->gambar}}"
                             class="img-fluid">
                     </p>
                     <div>
                         {!! $berita->konten !!}
                     </div>
-                    <p><span class="fw-bold">Editor :</span> Admin</p>
+                    <p><span class="fw-bold">Editor :</span> {{$berita->penulis}}</p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 ps-md-4 ps-0">
                     <div class="sticky-top" style="top:15%">
                         <div class="row g-0">
                             <div class="col-md-12 d-flex w-100 mb-1" style="height: 38px;">
@@ -134,36 +134,38 @@
                                 </div>
                                 <div class="w-100 h-100" style="border-bottom: 3px solid rgb(222, 222, 222);"></div>
                             </div>
+                            @foreach ($berita_terbaru as $item)
                             <div class="col-md-12 mt-3">
                                 <div class="w-100 gap-3 mt-2">
                                     <article class="d-flex list-card duration-250 p-2 rounded list-type gap-2"
                                         style="min-height: 88px;">
                                         <div class="flex-shrink-0 overflow-hidden rounded"
                                             style="height: 72px; width: 72px;">
-                                            <a href="/berita/perekonomian-jabar-2024-masih-bakal-tumbuh-positif-11709"
+                                            <a href="{{url('berita')}}/{{$item->slug}}"
                                                 class="">
-                                                <img src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1702085190-IMG-20231103-WA0044.jpg"
+                                                <img src="{{asset('storage')}}/{{$item->gambar}}"
                                                     width="72" height="72"
                                                     alt="Perekonomian Jabar 2024 Masih Bakal Tumbuh Positif  "
                                                     class="lazy-img w-100 h-100 d-block"
                                                     style="object-fit: cover; object-position: center;"
-                                                    data-src="https://dvgddkosknh6r.cloudfront.net/live/media/img/1702085190-IMG-20231103-WA0044.jpg"
+                                                    data-src="{{asset('storage')}}/{{$item->gambar}}"
                                                     lazy="loaded"></a>
                                         </div>
                                         <div class="w-100 d-flex flex-column align-items-start justify-content-center">
-                                            <a href="/berita/perekonomian-jabar-2024-masih-bakal-tumbuh-positif-11709"
+                                            <a href="{{url('berita')}}/{{$item->slug}}"
                                                 class="">
                                                 <h6 class="font-lato fw-normal line-clamp-2" style="font-size: 1rem;">
-                                                    Perekonomian Jabar 2024 Masih Bakal Tumbuh Positif
+                                                    {{$item->judul}}
                                                 </h6>
                                             </a>
-                                            <p class="fw-normal" style="font-size: 0.75rem;"><span>Ekonomi</span> | 9
-                                                Desember 2023
+                                            <p class="fw-normal" style="font-size: 0.75rem;">
+                                                <span>{{$item->kategori}}</span> | {{ Carbon\Carbon::parse($item->tanggal_rilis)->format('l, d F Y') }}
                                             </p>
                                         </div>
                                     </article>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
