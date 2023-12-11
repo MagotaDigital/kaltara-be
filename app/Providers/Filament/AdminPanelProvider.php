@@ -80,7 +80,7 @@ class AdminPanelProvider extends PanelProvider
                     ->label('Arsip dan Dokumen')
                     ->icon('heroicon-o-document-duplicate'),
                 NavigationGroup::make()
-                    ->label('Progam Unggulan')
+                    ->label('Program Unggulan')
                     ->icon('heroicon-o-clipboard-document-check'),
                 NavigationGroup::make()
                     ->label('Umum')

@@ -93,7 +93,7 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },  
+    },
     breakpoints: {
           640: {
             slidesPerView: 1,
@@ -109,7 +109,7 @@ var swiper = new Swiper(".mySwiper", {
           },
       },
   });
-  
+
   var swiper = new Swiper(".mySwiperPriority", {
     mousewheel: true,
     pagination: {
@@ -119,7 +119,7 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },  
+    },
     breakpoints: {
           640: {
             slidesPerView: 1,
@@ -135,7 +135,7 @@ var swiper = new Swiper(".mySwiper", {
           },
       },
   });
-  
+
   var swiper = new Swiper(".mySwiper3", {
     mousewheel: true,
     pagination: {
@@ -145,7 +145,7 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
-    },  
+    },
     breakpoints: {
           640: {
             slidesPerView: 1,
@@ -162,7 +162,7 @@ var swiper = new Swiper(".mySwiper", {
       },
   });
   var swiper = new Swiper(".mySwiper-Banner", {
-    slidesPerView: 1.3,
+    slidesPerView: 1,
     spaceBetween: 30,
     mousewheel: true,
     pagination: {

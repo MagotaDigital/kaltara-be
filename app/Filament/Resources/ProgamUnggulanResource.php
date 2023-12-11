@@ -20,13 +20,13 @@ class ProgamUnggulanResource extends Resource
 {
     protected static ?string $model = ProgamUnggulan::class;
 
-    protected static ?string $navigationParentItem = 'Progam Unggulan';
+    protected static ?string $navigationParentItem = 'Program Unggulan';
 
-    protected static ?string $navigationGroup = 'Progam Unggulan';
+    protected static ?string $navigationGroup = 'Program Unggulan';
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $pluralModelLabel = 'Progam Unggulan';
+    protected static ?string $pluralModelLabel = 'Program Unggulan';
 
     // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

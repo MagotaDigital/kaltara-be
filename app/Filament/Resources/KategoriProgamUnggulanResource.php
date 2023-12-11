@@ -17,11 +17,11 @@ class KategoriProgamUnggulanResource extends Resource
 {
     protected static ?string $model = KategoriProgamUnggulan::class;
 
-    protected static ?string $navigationParentItem = 'Kategori Progam Unggulan';
+    protected static ?string $navigationParentItem = 'Kategori Program Unggulan';
 
-    protected static ?string $navigationGroup = 'Progam Unggulan';
+    protected static ?string $navigationGroup = 'Program Unggulan';
 
-    protected static ?string $pluralModelLabel = 'Kategori Progam Unggulan';
+    protected static ?string $pluralModelLabel = 'Kategori Program Unggulan';
 
     // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

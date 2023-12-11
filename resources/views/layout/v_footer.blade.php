@@ -2,7 +2,7 @@
     <div class="container pb-5">
         <div class="row pb-4">
             <div class="col-md-12 py-5">
-                <img src="assets/img/kaltara-logo.png" alt="" class="logo-footer">
+                <img src="https://kaltaraprov.go.id/source/assets/landing-css/img/icon/logopt.png" alt="" class="logo-footer">
             </div>
             <div class="footer-head">
                 <div class="items d-flex">
@@ -43,72 +43,49 @@
         <div class="row ">
             <div class="col-md-12 d-flex pb-0 pb-sm-3">
                 <i class="ri-organization-chart me-2 sidemap-icon"></i>
-                <p class="fs-6 fw-bold">Sidemap</p>
+                <p class="fs-6 fw-bold">Sitemap</p>
             </div>
 
             <div class="footer-sidemap d-none d-sm-flex">
                 <div class="item">
                     <p class="fw-bold pb-3">Berita Kaltara</p>
                     <ul>
-                        <li><a href="">Ekonomi</a></li>
-                        <li><a href="">Kesehatan</a></li>
-                        <li><a href="">Pendidikan</a></li>
-                        <li><a href="">Pemerintahan</a></li>
-                        <li><a href="">Infrastruktur</a></li>
-                        <li><a href="">Social</a></li>
-                        <li><a href="">Teknologi</a></li>
+                        @foreach ($kategori_berita as $item)
+                        <li><a href="{{url('berita')}}?kategori={{$item->nama}}">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="item">
                     <p class="fw-bold pb-3">Layanan Publik</p>
                     <ul>
-                        <li><a href="">Kependudukan dan Tempat Tinggal</a></li>
-                        <li><a href="">Pendidikan dan Pembelajaran</a></li>
-                        <li><a href="">Kesehatan</a></li>
-                        <li><a href="">Sosial dan Keluarga</a></li>
-                        <li><a href="">Lingkungan</a></li>
-                        <li><a href="">Ekonomi, Bisnis dan Profesi</a></li>
-                        <li><a href="">Teknologi dan Komunikasi</a></li>
-                        <li><a href="">Sarana dan Prasarana</a></li>
-                        <li><a href="">Khusus</a></li>
-                        <li><a href="">PIKOBAR</a></li>
+                        @foreach ($kategori_layanan_publik as $item)
+                        <li><a href="{{url('layanan-publik')}}?kategori={{$item->nama}}">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="item">
                     <p class="fw-bold pb-3">Dashboard Publik</p>
                     <ul>
-                        <li><a href="">Kesehatan</a></li>
-                        <li><a href="">Kependudukan</a></li>
-                        <li><a href="">Industri</a></li>
-                        <li><a href="">Pendidikan</a></li>
-                        <li><a href="">Informasi Covid-19</a></li>
-                        <li><a href="">BIAN</a></li>
+                        @foreach ($dashboard_publik as $item)
+                        <li><a href="{{$item->link}}" target="_blank">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="item">
                     <p class="fw-bold pb-3">Profil Kaltara</p>
                     <ul>
-                        <li><a href="index.html">Selayang Pandang</a></li>
-                        <li><a href="about.html">Tentang Kalimantan Utara</a></li>
-                        <li><a href="document.html">Arsip dan Dokumen</a></li>
-                        <li><a href="">Jaringan Dokumentasi dan Informasi Hukum</a></li>
-                        <li><a href="">Layanan Pengadaan Secara Elektronik</a></li>
-                        <li><a href="">Sapawarga</a></li>
+                        <li><a href="{{url('selayang-pandang')}}">Selayang Pandang</a></li>
+                        <li><a href="{{url('tentang')}}">Tentang Kalimantan Utara</a></li>
+                        <li><a href="{{url('arsip-dokumen')}}">Arsip dan Dokumen</a></li>
+                        <li><a href="{{url('kalender-event')}}">Kalender Event</a></li>
                     </ul>
                 </div>
                 <div class="item">
                     <p class="fw-bold pb-3">PPID</p>
                     <ul>
-                        <li><a href="">Profil PPID</a></li>
-                        <li><a href="">Alur Layanan Informasi Publik</a></li>
-                        <li><a href="">Permohonan Informasi Publik</a></li>
-                        <li><a href="">Pengajuan Keberatan</a></li>
-                        <li><a href="">Informasi yang Wajib Tersedia Setiap Saat</a></li>
-                        <li><a href="">Informasi Publik Berkala</a></li>
-                        <li><a href="">Informasi Publik Serta Merta</a></li>
-                        <li><a href="">Tata Cara Penyelesaian Sengketa</a></li>
-                        <li><a href="">Tata Cara Pengaduan</a></li>
-                        <li><a href="">Daftar Informasi Dikecualikan</a></li>
+                        @foreach ($ppid as $item)
+                        <li><a href="{{$item->link}}" target="_blank">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

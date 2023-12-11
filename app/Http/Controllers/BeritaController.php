@@ -25,11 +25,10 @@ class BeritaController extends Controller
             'kategori_berita' => $this->beritaModel->getKategoriBerita(),
             'ppid' => $this->beritaModel->getPPID(),
             // main data
-            'berita_terkini' => $this->beritaModel->getBeritaTerkini(),
+            'berita_terkini' => $this->beritaModel->getBeritaTerkini($kategori),
+            'berita_terpopuler' => $this->beritaModel->getBeritaTerpopuler($kategori),
             'berita' => $this->beritaModel->getBerita($kategori),
         ];
-
-        $data2 = $this->beritaModel->getBerita($kategori);
 
         return view('v_berita', $data);
     }

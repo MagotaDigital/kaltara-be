@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-blue fixed-top container-fluid">
     <div class="container-lg container-fluid p-0 p-lg-2">
-        <a class="navbar-brand ms-2 ms-lg-0" href="#">
+        <a class="navbar-brand ms-2 ms-lg-0" href="{{url('/')}}">
             <img src="https://kaltaraprov.go.id/source/assets/landing-css/img/icon/logopt.png" alt="Kalimantan Utara"
                 width="220">
         </a>
@@ -62,13 +62,9 @@
                         <i class="ri-arrow-down-s-line text-white fs-3"></i>
                     </summary>
                     <ul class="dropdown-menu bg-blue ps-3 gap-2 border-0">
-                        <li class="mb-2"><a href="" class="text-white">Ekonomi</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Kesehatan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Pendidikan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Pemerintah</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Infrastruktur</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Sosial</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Teknologi</a></li>
+                        @foreach ($kategori_berita as $item)
+                        <li class="mb-2"><a href="{{url('berita')}}?kategori={{$item->nama}}" class="text-white">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="nav-item dropdown bg-green-primary mb-3">
@@ -77,16 +73,9 @@
                         <i class="ri-arrow-down-s-line text-white fs-3"></i>
                     </summary>
                     <ul class="dropdown-menu bg-blue ps-3 gap-2 border-0">
-                        <li class="mb-2"><a href="" class="text-white">Kependudukan dan Tempat Tinggal</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Pendidikan dan Pembelajaran</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Kesehatan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Sosial dan Keluarga</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Lingkungan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Ekonomi, Bisnis dan Profesi</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Teknologi dan Komunikasi</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Sarana dan Prasarana</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Khusus</a></li>
-                        <li class="mb-2"><a href="" class="text-white">PIKOBAR</a></li>
+                        @foreach ($kategori_layanan_publik as $item)
+                        <li class="mb-2"><a href="{{url('layanan-publik')}}?kategori={{$item->nama}}" class="text-white">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="nav-item dropdown bg-green-primary mb-3">
@@ -95,12 +84,9 @@
                         <i class="ri-arrow-down-s-line text-white fs-3"></i>
                     </summary>
                     <ul class="dropdown-menu bg-blue ps-3 gap-2 border-0">
-                        <li class="mb-2"><a href="" class="text-white">Kesehatan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Kependudukan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Industri</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Pendidikan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Informasi Covid-19</a></li>
-                        <li class="mb-2"><a href="" class="text-white">BIAN</a></li>
+                        @foreach ($dashboard_publik as $item)
+                        <li class="mb-2"><a href="{{$item->link}}" target="_blank" class="text-white">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="nav-item dropdown bg-green-primary mb-3">
@@ -109,12 +95,10 @@
                         <i class="ri-arrow-down-s-line text-white fs-3"></i>
                     </summary>
                     <ul class="dropdown-menu bg-blue ps-3 gap-2 border-0">
-                        <li class="mb-2"><a href="index.html" class="text-white">Seyangan Pandang</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white">Tentang Kalimantan Utara</a></li>
-                        <li class="mb-2"><a href="document.html" class="text-white">Arsip dan Dokumen</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Jaringan Dokumentasi dan Informasi Hukum</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Layanan Pengadaan Secara Elektronik</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Sapawarga</a></li>
+                        <li class="mb-2"><a href="{{url('selayang-pandang')}}" class="text-white">Selayang Pandang</a></li>
+                        <li class="mb-2"><a href="{{url('tentang')}}" class="text-white">Tentang Kalimantan Utara</a></li>
+                        <li class="mb-2"><a href="{{url('arsip-dokumen')}}" class="text-white">Arsip dan Dokumen</a></li>
+                        <li class="mb-2"><a href="{{url('kalender-event')}}" class="text-white">Kalender Event</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown bg-green-primary mb-3">
@@ -123,16 +107,9 @@
                         <i class="ri-arrow-down-s-line text-white fs-3"></i>
                     </summary>
                     <ul class="dropdown-menu bg-blue ps-3 gap-2 border-0">
-                        <li class="mb-2"><a href="" class="text-white">Profil PPID</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Alur Layanan Informasi Publik</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Permohonan Informasi Publik</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Pengajuan Keberatan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Informasi yang Wajib Tersedia Setiap Saat</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Informasi Publik Berkala</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Informasi Publik Serta Merta</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Tata Cara Penyelesaian Sengketa</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Tata Cara Pengaduan</a></li>
-                        <li class="mb-2"><a href="" class="text-white">Daftar Informasi Dikecualikan</a></li>
+                        @foreach ($ppid as $item)
+                        <li class="mb-2"><a href="{{$item->link}}" target="_blank" class="text-white">{{$item->nama}}</a></li>
+                        @endforeach
                     </ul>
                 </li>
             </ul>
@@ -149,69 +126,17 @@
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Berita Kalimantan Utara</a>
                         <div class="row gy-5">
+                            @foreach ($kategori_berita as $item)
                             <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/ekonomi.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('berita')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Ekonomi</h2>
-                                        <p>Menyajikan artikel perkembangan ekonomi Kalimantan Utara terpercaya</p>
+                                        <h2 class="fs-5 mb-1">{{$item->nama}}</h2>
+                                        <p>{{$item->deskripsi}}</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/kesehatan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kesehatan</h2>
-                                        <p>Kabar dan situasi terkini kesehatan di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/pendidikan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Perndidikan</h2>
-                                        <p>Informasi terbaru dari dunia pendidikan dan kebudayaan</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/Pemerintahan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Pemerintah</h2>
-                                        <p>Pembaruan Kalimantan Utara resmi dari pemerintah</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/infrastruktur.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Infrastruktur</h2>
-                                        <p>Menyajikan artikel perkembangan infrastruktur di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/sosial.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Sosial</h2>
-                                        <p>Kondisi terbarukan tentang kesejahteraan sosial</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/sosial.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Teknologi</h2>
-                                        <p>Informasi terkait perkembangan teknologi di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
@@ -225,101 +150,22 @@
     <div class="offcanvas-body">
         <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
             <div class="container mx-auto position-relative">
-                <img src="images/burung.png" alt="" class="position-absolute burung">
+                <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Layanan Publik</a>
                         <div class="row gy-5">
+                            @foreach ($kategori_layanan_publik as $item)
                             <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/ekonomi.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('layanan-publik')}}?kategori={{$item->nama}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kependudukan dan Tempat Tinggal</h2>
-                                        <p>Temukan informasi, panduan, dan layanan terkait urusan administratif tempat tinggal Anda.</p>
+                                        <h2 class="fs-5 mb-1">{{$item->nama}}</h2>
+                                        <p>{{$item->deskripsi}}</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/kesehatan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Pedidikan dan Pembelajaran</h2>
-                                        <p>Jelajahi informasi dan layanan terkait untuk membantu kebutuhan pendidikan dan pembelajaran Anda.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/kesehatan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kesehatan</h2>
-                                        <p>Temukan informasi, dukungan, dan fasilitas untuk hidup sehat dan bahagia.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/sosial.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Sosial dan Keluarga</h2>
-                                        <p>Temukan bantuan, pemberdayaan, dan kesempatan untuk meningkatkan kesejahteraan sosial bersama.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/lingkungan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Lingkungan</h2>
-                                        <p>Temukan informasi dan layanan pengelolaan lingkungan yang berkelanjutan untuk hidup yang lebih baik.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/ekonomi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Ekonomi, Bisnis dan Profesi</h2>
-                                        <p>Temukan wawasan, dukungan, dan layanan seputar ekonomi, bisnis, dan profesi Anda.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/sosial.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Teknologi dan Komunikasi</h2>
-                                        <p>Dapatkan informasi dan layanan terkini yang mendekatkan Anda dengan transformasi digital.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/sarana-prasarana.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Sarana dan Prasarana</h2>
-                                        <p>Temukan fasilitas umum, dukungan, dan regulasi yang mendorong kemajuan bersama.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/khusus.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Khusus</h2>
-                                        <p>Jelajahi beragam informasi dan layanan yang disesuaikan dengan kebutuhan Anda.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="/berita?kategori=ekonomi" class="d-flex align-items-start">
-                                    <img src="images/icons/covid19.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">PIKOBAR</h2>
-                                        <p>Media komunikasi dan informasi penanganan Covid-19 satu pintu di Jawa Barat</p>
-                                    </div>
-                                </a>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
@@ -333,65 +179,22 @@
     <div class="offcanvas-body">
         <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
             <div class="container mx-auto position-relative">
-                <img src="images/burung.png" alt="" class="position-absolute burung">
+                <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href=""class="text-white font-primary fs-3 leading-10">Dashboard Publik</a>
                         <div class="row gy-5">
+                            @foreach ($dashboard_publik as $item)
                             <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/kesehatan.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
+                                    <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kesehatan</h2>
-                                        <p>Dapatkan informasi kesehatan terutama terkait Covid-19 di Kalimantan Utara</p>
+                                        <h2 class="fs-5 mb-1">{{$item->nama}}</h2>
+                                        <p>{{$item->deskripsi}}</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/kependudukan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Kependudukan</h2>
-                                        <p>Dapatkan ragam informasi soal kependudukan di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/industri.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Industri</h2>
-                                        <p>Dapatkan data ekonomi di Kalimantan Utara mulai dari UMKM hingga keuangan daerah</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/pendidikan.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Pendidikan</h2>
-                                        <p>Dapatkan ragam informasi terkait pendidikan di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/covid19.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Informasi Covid-19</h2>
-                                        <p>Dapatkan informasi terkait perkembangan Covid-19 di Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/bian.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">BIAN</h2>
-                                        <p>Dapatkan informasi terkait Bulan Imunisasi Anak Nasional</p>
-                                    </div>
-                                </a>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
@@ -405,14 +208,14 @@
     <div class="offcanvas-body">
         <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
             <div class="container mx-auto position-relative">
-                <img src="images/burung.png" alt="" class="position-absolute burung">
+                <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">Profil Kalimantan Utara</a>
                         <div class="row gy-5">
                             <div class="col-4 text-white">
-                                <a href="index.html" class="d-flex align-items-start">
-                                    <img src="images/icons/selayang-pandang.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('selayang-pandang')}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('template-user/icon/selayang-pandang.svg') }}" alt="Selayang Pandang" class="mt-1 icon">
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Selayang Pandang</h2>
                                         <p>Kilas perjalanan kalimantan Utara menuju Kaltara Juara Lahir Batin</p>
@@ -420,8 +223,8 @@
                                 </a>
                             </div>
                             <div class="col-4 text-white">
-                                <a href="about.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('tentang')}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Ekonomi" class="mt-1 icon">
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Tentang Kalimantan Utara</h2>
                                         <p>Cari tahu sejarah, pimpinan, dan pemerintahan Kalimantan Utara selengkapnya</p>
@@ -429,8 +232,8 @@
                                 </a>
                             </div>
                             <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/arsip-dan-dokumen.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('arsip-dokumen')}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('template-user/icon/arsip-dan-dokumen.svg') }}" alt="Arsip dan Dokumen" class="mt-1 icon">
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Arsip dan Dokumen</h2>
                                         <p>Akses dan unduh dokumen resmi yang dirilis pemerintah Kalimantan Utara</p>
@@ -438,35 +241,8 @@
                                 </a>
                             </div>
                             <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/arsip-dan-dokumen.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Jaringan Dokumentasi dan Informasi Hukum</h2>
-                                        <p>Layanan transparansi informasi produk hukum terpadu di lingkungan Pemdaprov Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/arsip-dan-dokumen.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Layanan Pengadaan Secara Elektronik</h2>
-                                        <p>Layanan transparansi informasi produk hukum terpadu di lingkungan Pemdaprov Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/arsip-dan-dokumen.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Sapawarga</h2>
-                                        <p>Aplikasi layanan publik digital di Jawa Barat yang terintegrasi</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{url('kalender-event')}}" class="d-flex align-items-start">
+                                    <img src="{{ asset('template-user/icon/informasi.svg') }}" alt="Kalender-event" class="mt-1 icon">
                                     <div class="ms-3 text-white">
                                         <h2 class="fs-5 mb-1">Kalender Event</h2>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis velit, quia ipsa tempore magnam eligendi repellendus aliquid laboriosam soluta saepe dignissimos ratione minus! Quibusdam, error sint. Ut, consectetur impedit.</p>
@@ -486,101 +262,22 @@
     <div class="offcanvas-body">
         <section class="bg-blue py-3 position-absolute start-0 end-0 border-t border-green-400 overflow-auto">
             <div class="container mx-auto position-relative">
-                <img src="images/burung.png" alt="" class="position-absolute burung">
+                <!-- <img src="images/burung.png" alt="" class="position-absolute burung"> -->
                 <div class="d-flex mx-auto align-align-items-start pt-2 pb-3 position-relative" style="z-index: 2;">
                     <div class="d-flex flex-column gap-4 flex-grow-1">
                         <a href="/berita"class="text-white font-primary fs-3 leading-10">PPID</a>
                         <div class="row gy-5">
+                            @foreach ($ppid as $item)
                             <div class="col-4 text-white">
-                                <a href="index.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
+                                <a href="{{$item->link}}" target="_blank" class="d-flex align-items-start">
+                                    <img src="{{ asset('storage') }}/{{$item->gambar}}" alt="{{$item->nama}}" class="mt-1 icon">
                                     <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Profil PPID</h2>
-                                        <p>Cari tahu tentang Profil PPID, Struktur Organisasi, Visi & Misi, dan Uraian Tugas dari PPID Kalimantan Utara</p>
+                                        <h2 class="fs-5 mb-1">{{$item->nama}}</h2>
+                                        <p>{{$item->deskripsi}}</p>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-4 text-white">
-                                <a href="" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Alur Layanan Informasi Publik</h2>
-                                        <p>Informasi seputar pengajuan permohonan informasi publik PPID Provinsi Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Permohonan Informasi publik</h2>
-                                        <p>Ajukan permohonan informasi publik kepada PPID Provinsi Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Pengajuan Keberatan</h2>
-                                        <p>Informasi tata cara pengajuan keberatan terkait permohonan informasi kepada PPID Provinsi Kalimantan Utara</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Informasi yang Wajib Tersedia Setiap Saat</h2>
-                                        <p>Informasi yang harus disediakan oleh Badan Publik dan siap tersedia apabila terdapat Permohon Informasi Publik.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Informasi Publik Berkala</h2>
-                                        <p>Informasi yang wajib diperbaharui kemudian disediakan dan diumumkan kepada publik secara rutin atau berkala sekurang-kurangnya setiap 6 bulan sekali</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Informasi Publik Serta Merta</h2>
-                                        <p>Informasi yang berkaitan dengan hajat hidup orang banyak dan ketertiban umum dan wajib diumumkan secara serta merta tanpa penundaan</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Tata Cara Penyelesaian Sengketa</h2>
-                                        <p>Informasi tata cara penyelesaian sengketa informasi ke Komisi Informasi</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Tata Cara Pengaduan</h2>
-                                        <p>Informasi tata cara pengaduan penyalahgunaan wewenang atau pelanggaran yang dilakukan oleh Pejabat Badan Publik</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-4 text-white">
-                                <a href="document.html" class="d-flex align-items-start">
-                                    <img src="images/icons/informasi.svg" alt="Ekonomi" class="mt-1 icon">
-                                    <div class="ms-3 text-white">
-                                        <h2 class="fs-5 mb-1">Daftar Informasi Dikecualikan</h2>
-                                        <p>Daftar informasi yang tidak dapat diakses oleh Pemohon Informasi Publik sebagaimana dimaksud dalam UU No 14 Tahun 2008 tentang Keterbukaan Informasi Publik</p>
-                                    </div>
-                                </a>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class ProgamUnggulanModel extends Model
+class ProgramUnggulanModel extends Model
 {
     use HasFactory;
 
@@ -30,14 +30,14 @@ class ProgamUnggulanModel extends Model
 
 
     // main data
-    public function getProgam()
+    public function getProgram()
     {
         return DB::table('progam_unggulans as p')
             ->join('kategori_progam_unggulans as k', 'p.kategori_progam_unggulan_id', 'k.id')
             ->select('p.*', 'k.nama as kategori')
             ->get();
     }
-    public function getProgamPerKategori($kategori)
+    public function getProgramPerKategori($kategori)
     {
         $id_kategori = DB::table('kategori_progam_unggulans as k')->where('k.nama',$kategori)->first();
 
@@ -48,7 +48,7 @@ class ProgamUnggulanModel extends Model
             ->get();
     }
 
-    public function getKategoriProgam()
+    public function getKategoriProgram()
     {
         return DB::table('kategori_layanan_publiks')
             ->select('kategori_layanan_publiks.nama as nama_kategori')
